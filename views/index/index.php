@@ -8,23 +8,37 @@ protegePagina(); // Chama a função que protege a página
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+ <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
+ <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
 
-<title>Sistema de Inventário</title></head>
+
+ <title>Sistema de Inventário</title></head>
 <body>
 <?php
 require_once("../../topo.php");
 ?>
-<br><br><br><br><br><br>
+<h1> &nbsp&nbspSeja bem vindo!!</h1>
 
-dfds
+<br>
+Perguntar sobre o status, se vai ficar no banco ou só no checkbox
+<br><br>
+TROCAR OS TIPOS DOS VALORES EM IMPRESSORA E MONITOR COLOCAR BOOLEAN
+<br><br>
+VER QUESTAO DO RESPONSÁVEL
+<br><br>
+MUDAR NA TABELA IMPRESSORA O CAMPO "ID_FABRINCANTE"
+<br><br>
+ MONITOR NAO POSSUI NUM_PATRIMONIO
+ <br><br>
+ MONITOR NAO POSSUI NUMERO DE SÉRIE
+  <br><br>
+  FAZER UM FOOTER
 
-
-
+ </body>
 
 <?php
- require_once("../../footer.php")
+require_once("../../footer.php")
 ?>
-  
- </body>
 
 </html>

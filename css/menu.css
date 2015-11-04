@@ -1,15 +1,7 @@
+body {
 
-footer {
-    font-family: verdana;
-    color: #6E6E6E;
-    position: fixed; 
-    bottom: 0px; 
-    width: 100%; 
-    left: 0px;
-    height: 100px; 
-   background-color: #111;
-    background-image: linear-gradient( #222,#111);
-    border-radius: 0px;
+    background: #ededed;
+
 }
 
 #menu {
@@ -19,7 +11,7 @@ footer {
     top: -20px;
     width: 100%;
     padding: 60px 0 0 0;
-    list-style: none;  
+    list-style: none;
     background-color: #111;
     background-image: linear-gradient(#444, #111);
     border-radius: 0px;
@@ -58,14 +50,14 @@ footer {
 #menu ul {
     list-style: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
     display: none;
     position: absolute;
     top: 35px;
     left: 0;
-    z-index: 99999;    
-    background-color: #444;   
-    background-image: linear-gradient(#444, #111);    
+    z-index: 99999;
+    background-color: #444;
+    background-image: linear-gradient(#444, #111);
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
@@ -74,16 +66,16 @@ footer {
     float: none;
     margin: 0;
     padding: 0;
-    display: block;  
-    box-shadow: 0 1px 0 #111111, 
+    display: block;
+    box-shadow: 0 1px 0 #111111,
                 0 2px 0 #777777;
 }
 
-#menu ul li:last-child { 
-    box-shadow: none;    
+#menu ul li:last-child {
+    box-shadow: none;
 }
 
-#menu ul a {    
+#menu ul a {
     padding: 10px;
     height: auto;
     line-height: 1;
@@ -93,12 +85,12 @@ footer {
     text-transform: none;
 }
 
-*html #menu ul a { /* IE6 */   
+*html #menu ul a { /* IE6 */
     height: 10px;
     width: 150px;
 }
 
-*:first-child+html #menu ul a { /* IE7 */    
+*:first-child+html #menu ul a { /* IE7 */
     height: 10px;
     width: 150px;
 }
@@ -125,7 +117,7 @@ footer {
 }
 
 #menu ul li:first-child a:hover:after {
-    border-bottom-color: #04acec; 
+    border-bottom-color: #04acec;
 }
 
 #menu ul li:last-child a {
@@ -141,4 +133,56 @@ footer {
     clear: both;
     height: 0;
 }
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.sub-menu li:hover {
+    background: #555;
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
+.marginBottom-0 {margin-bottom:0;}
+
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu>a:after {
+    display:block;
+    content:" ";
+    float:right;
+    width:0;height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+    }
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+
+
+
 

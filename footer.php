@@ -1,7 +1,5 @@
- <footer>
-   <br>
-   <br>
-    <div align="right">Sistema criado para disciplina de Desenvolvimento WEB &nbsp
-    <br>
-    Copyright information - 2015 &nbsp&nbsp</div>
-  </footer>
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">Projeto em desenvolvimento para aula de Programação WEB</p>
+    </div>
+</div>

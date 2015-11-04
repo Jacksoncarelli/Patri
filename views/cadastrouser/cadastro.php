@@ -7,26 +7,21 @@ protegePagina(); // Chama a função que protege a página
     <link rel="stylesheet" type="text/css" href="../../css/menu.css">
 <meta charset="UTF-8">
     <title>Cadastro Usuário</title>
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css">
+    <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <?php
 require_once("../../topo.php");
 ?>
-<br><br><br><br><br><br>
-
-
 <table  >
     <tr>
     <td align="left">
         <br>                                            
-        
-
-
-
-
-
-
-
 
  <form action="inserirusuario.php " method="post">
             <br>
@@ -42,8 +37,8 @@ require_once("../../topo.php");
     <td><input type="text" name="usuario" /></td>
   </tr>
   <tr>
-    <td>Cpf:</td>
-    <td><input type="text" name="cpf" /></td>
+    <td>Nome:</td>
+    <td><input type="text" name="nome" /></td>
   </tr>
   <tr>
     <tr>

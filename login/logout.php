@@ -1,5 +1,5 @@
 <?php
-session_start(); //iniciamos a sessão que foi aberta
-session_unset(); //limpamos as variaveis globais das sessões
-echo "<script>alert('Você saiu!');top.location.href='/patri/login/login.php';</script>";
+session_start(); //iniciamos a sessï¿½o que foi aberta
+session_unset(); //limpamos as variaveis globais das sessï¿½es
+echo "<script>alert('Volte sempre!'); top.location.href='/patri/login/login.php';</script>";
 ?>

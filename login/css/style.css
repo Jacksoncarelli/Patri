@@ -50,9 +50,23 @@ table {
 h1 {
 color: White;
 font-size: 50px;
-font-family: Edwardian ScriptITC;
+font-family: Lucida Fax;
 
 }
+h2 {
+color: White;
+font-size: 30px;
+font-family: Lucida Fax;
+
+}
+
+h3 {
+color: White;
+font-size: 15px;
+font-family: Lucida Fax;
+
+}
+
 .about {
   margin: 70px auto 40px;
   padding: 8px;

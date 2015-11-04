@@ -4,10 +4,11 @@ protegePagina(); // Chama a função que protege a página
 ?>
 <?php
 require_once ("../../conexao.php");
-$nome=$_POST["usuario"];
-$usuario=$_POST["cpf"];
+$usuario=$_POST["usuario"];
+$nome=$_POST["nome"];
 $senha=$_POST["senha"];
-$sql = "INSERT INTO usuarios (nome_user,cpf_user,senha) VALUES ('$nome', '$usuario','$senha')";
+
+$sql = "INSERT INTO usuarios (nome,usuario,senha) VALUES ('$nome', '$usuario','$senha')";
 
 if($db->query($sql)){
     
