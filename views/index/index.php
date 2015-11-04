@@ -11,13 +11,14 @@ protegePagina(); // Chama a função que protege a página
  <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
  <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
-
+ <?php
+ require_once("../../topo.php");
+ ?>
+ </head>
 
  <title>Sistema de Inventário</title></head>
 <body>
-<?php
-require_once("../../topo.php");
-?>
+
 <h1> &nbsp&nbspSeja bem vindo!!</h1>
 
 <br>
@@ -34,7 +35,29 @@ MUDAR NA TABELA IMPRESSORA O CAMPO "ID_FABRINCANTE"
  MONITOR NAO POSSUI NUMERO DE SÉRIE
   <br><br>
   FAZER UM FOOTER
-
+<br><br>
+MONITOR NAO POSSUI NUM_PATRIMONIO
+<br><br>
+MONITOR NAO POSSUI NUMERO DE SÉRIE
+<br><br>
+FAZER UM FOOTER<br><br>
+MONITOR NAO POSSUI NUM_PATRIMONIO
+<br><br>
+MONITOR NAO POSSUI NUMERO DE SÉRIE
+<br><br>
+FAZER UM FOOTER<br><br>
+MONITOR NAO POSSUI NUM_PATRIMONIO
+<br><br>
+MONITOR NAO POSSUI NUMERO DE SÉRIE
+<br><br>
+FAZER UM FOOTER<br><br>
+MONITOR NAO POSSUI NUM_PATRIMONIO
+<br><br>
+MONITOR NAO POSSUI NUMERO DE SÉRIE
+<br><br>
+FAZER UM FOOTER
+<br><br>
+TESTE
  </body>
 
 <?php

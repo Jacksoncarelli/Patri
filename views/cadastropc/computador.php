@@ -16,12 +16,7 @@ require_once("../../topo.php");
 </head>
 <body>
 
-
-
-
-
-
-        <br>
+<br>
   <div class="col-xs-12"  >
 <div class="panel " class="container">
 
@@ -177,9 +172,11 @@ require_once("../../topo.php");
 </div>
 </div>
 </div>
-</div>      
+</div>
 </div>
 </body>
 
-
+<?php
+require_once("../../footer.php")
+?>
 </html>
