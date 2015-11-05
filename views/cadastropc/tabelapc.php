@@ -86,10 +86,22 @@ require_once("../../topo.php");
                         echo '<td>'. $row["nome_status"].'</td>';
 
                         echo '<td align="center">
-                      <button " class="btn btn-editar btn-sm" data-toggle="modal"
-                               id=' . $row["id_computador"] . '>
-                            <i class="glyphicon glyphicon-pencil"></i>  Editar
-                        </button>
+                        
+    <form  action="editarpc.php " method="GET">
+
+
+          <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>
+          <button class="btn btn-success btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Editar</button>
+
+    </form>
+     <!--form  action="deletarpc.php" method="GET">
+
+
+          <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>
+          <button class="btn btn-danger btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Deletar</button>
+
+    </form-->
+
                     </td>
                 </tr>';
 
