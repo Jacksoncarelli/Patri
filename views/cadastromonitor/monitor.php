@@ -88,8 +88,10 @@ require_once("../../topo.php");
                         $id=$tbl['id_modelo'];
                         ?>
                         <option value="<?php echo $id?>">
-                            <?php echo $nome_sistemas ?></option>
-                    <?php } ?>
+                            "<?php echo $nome_sistemas ?></option>
+                    <?php 
+                    } 
+                    ?>
                 </select>
             </div>
 

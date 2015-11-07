@@ -26,7 +26,7 @@ $sql = "UPDATE computador SET nome='$nome',serial_so='$serial_so',num_serie='$nu
 
 if($db->query($sql)){
 
-    echo "<script>alert('Computador atualizado com sucesso!');top.location.href='tabelapc.php';</script>";
+    echo "<script>top.location.href='tabelapc.php';</script>";
 }
 else
 	{

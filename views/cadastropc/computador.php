@@ -158,14 +158,6 @@ require_once("../../topo.php");
      <br><input class="btn btn-primary "  type="submit" value="CADASTRAR"/>
       </div>
 
-</form>
-      <div class="col-md-2">
-          <br><input class="btn btn-success" type="submit"  value="ATUALIZAR"/>
-      </div>
-      <div class="col-md-1">
-          <br><input class="btn btn-danger" type="submit"  value="DELETAR"/>
-      </div>
-<br>
 
 
 </div>

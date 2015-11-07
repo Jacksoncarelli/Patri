@@ -4,16 +4,16 @@ protegePagina(); // Chama a função que protege a página
 ?>
 <?php
 require_once ("../../conexao.php");
-$id=$_POST["id_pc"];
-$pegaid = (int) $_GET['id_pc'];
+$id=$_GET["id_impressora"];
+$pegaid = (int) $_GET['id_impressora'];
 
-$sql = "DELETE FROM computador WHERE id_computador=$pegaid";
+$sql = "DELETE FROM impressora WHERE id_impressora=$pegaid";
 
 
 
 if($db->query($sql)){
 
-    echo "<script>alert('Computador deletado com sucesso!');top.location.href='tabelapc.php';</script>";
+    echo "<script>alert('Impressora deletada com sucesso!');top.location.href='tabelaimpressora.php';</script>";
 }
 else
 {

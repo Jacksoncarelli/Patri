@@ -19,6 +19,7 @@ require_once("../../topo.php");
 require_once ("../../conexao.php");
 $id = $_GET['id_pc'];
 $id_status=$_GET['id_status'];
+
 $sql= "SELECT * FROM computador LEFT JOIN local ON computador.id_local = local.id_local
                                                       LEFT JOIN sistema_operacional ON computador.id_so = sistema_operacional.id_so
                                                       LEFT JOIN fabricante ON computador.id_fabricante = fabricante.id_fabricante
@@ -29,6 +30,13 @@ $row = $dados_pc->fetch_assoc();
 
 ?>
 
+<script type="text/javascript">
+    $(function(){
+    $("a.excluir").click(function(){
+        return confirm('Tem certeza que deseja excluir esse item?');
+    });
+});
+</script>
 
 <body>
 
@@ -37,7 +45,7 @@ $row = $dados_pc->fetch_assoc();
 <div class="panel " class="container">
 
 <div class="panel-heading">
-<label><div class="" align="left">Cadastro de computadores</label></div>  
+<label><div class="" align="left">Atualização de cadastro de computadores   </label></div>  
    <hr>
     <div class="col-xs-12">
   <div class="panel-body">
@@ -172,18 +180,22 @@ $row = $dados_pc->fetch_assoc();
 </div>
 
 
-            <div class="col-md-12">
+              
+ <div class="col-md-12">
+ </div>
 
-            </div>
 
-
-
-  <div class="col-md-2">
+  <div class="col-md-1">
           <input class="btn btn-success" type="submit"  value="ATUALIZAR"/>
         </form>
-<!--      <div class="col-md-1">-->
-<!--          <br><input class="btn btn-danger" type="submit"  value="DELETAR"/>-->
-<!--      </div>-->
+
+</div>
+        <form  class="form-horizontal" action="deletarpc.php " method="GET">
+      <div class="col-md-1  "
+          <br><button class="btn btn-danger excluir" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>'>DELETAR</button>
+
+      </div>
+      </form>
 
 
      

@@ -4,16 +4,16 @@ protegePagina(); // Chama a função que protege a página
 ?>
 <?php
 require_once ("../../conexao.php");
-$id=$_POST["id_pc"];
-$pegaid = (int) $_GET['id_pc'];
+$id=$_GET["id_monitor"];
+$pegaid = (int) $_GET['id_monitor'];
 
-$sql = "DELETE FROM computador WHERE id_computador=$pegaid";
+$sql = "DELETE FROM monitor WHERE id_monitor=$pegaid";
 
 
 
 if($db->query($sql)){
 
-    echo "<script>alert('Computador deletado com sucesso!');top.location.href='tabelapc.php';</script>";
+    echo "<script>alert('Monitor deletado com sucesso!');top.location.href='tabelamonitor.php';</script>";
 }
 else
 {

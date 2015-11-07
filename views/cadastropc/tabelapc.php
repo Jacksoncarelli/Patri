@@ -9,7 +9,7 @@ require_once("../../topo.php");
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="../../css/menu.css">
-    <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
     <title>Tabela Computadores</title>
@@ -27,7 +27,7 @@ require_once("../../topo.php");
         <form action=pdf_pc.php method=get >
 
         <button  class="btn btn-primary btn-sm" type="submit" >
-            Imprimir Relatório
+            <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir Relatório
         </button>
         </form>
 
@@ -36,7 +36,7 @@ require_once("../../topo.php");
 
 <div class="panel  panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title"><i class="fa fa-male fa-fw"></i>Computadores</h3>
+       <h3 class="panel-title"><i class="fa fa-male fa-fw"></i>Computadores</h3>
     </div>
     <div class="panel-body">
         <div class="table-responsive">
@@ -94,13 +94,6 @@ require_once("../../topo.php");
           <button class="btn btn-success btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Editar</button>
 
     </form>
-     <!--form  action="deletarpc.php" method="GET">
-
-
-          <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>
-          <button class="btn btn-danger btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Deletar</button>
-
-    </form-->
 
                     </td>
                 </tr>';
@@ -116,17 +109,12 @@ require_once("../../topo.php");
             </table>
         </div>
     </div>
+    <div class="panel-footer"></div>
 </div>
 
 </div>
-
-
-
-
-
-
 </body>
-
+<br><br>
 
 <?php
 require_once("../../footer.php")

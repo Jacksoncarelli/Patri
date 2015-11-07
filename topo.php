@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css">
 <head>
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
 </head>

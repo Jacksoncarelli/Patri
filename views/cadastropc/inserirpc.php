@@ -22,7 +22,7 @@ $sql = "INSERT INTO computador (nome,serial_so,num_serie,comentario,id_fabricant
 
 if($db->query($sql)){
 
-    echo "<script>alert('Computador cadastrado com sucesso!');top.location.href='computador.php';</script>";
+    echo "<script>top.location.href='computador.php';</script>";
 }
 else
 	{

@@ -27,7 +27,7 @@ require_once("../../topo.php");
 
     <form action="pdf_monitor.php">
     <button  class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createModal">
-        Imprimir Relatório
+        <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir Relatório
     </button></form>
 
     <p></p>
@@ -77,31 +77,82 @@ require_once("../../topo.php");
                              echo '<td>' . $row["modelo"] . '</td>';
                              echo '<td>' . $row["nome_fabricante"] . '</td>';
                              echo '<td>' . $row["nome_local"] . '</td>';
-                             echo '<td>' . $row["hdmi"] . '</td>';
+            
 
-//                             if ($row["hdmi"] = 1){
-//                                 echo '<td> Possui</td>';
-//                             } else {
-//                                 echo '<td> Não possui</td>';
-//
-//                             }
-                             echo '<td>' . $row["vga"] . '</td>';
-                             echo '<td>' . $row["dvi"] . '</td>';
-                             echo '<td>' . $row["displayport"] . '</td>';
-                             echo '<td>' . $row["autofalante"] . '</td>';
-                             echo '<td>' . $row["microfone"] . '</td>';
-                             echo '<td>' . $row["webcam"] . '</td>';
+                             if ($row["hdmi"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["hdmi"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+                             if ($row["vga"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["vga"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+
+                              if ($row["dvi"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["dvi"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+                              if ($row["displayport"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["displayport"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+                              if ($row["autofalante"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["autofalante"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+                             if ($row["microfone"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["microfone"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+                             if ($row["webcam"] == 1){
+                                 echo '<td>sim</td>';
+                             } else {
+                                $row["webcam"] = 0;
+                                 echo '<td>não</td>';
+
+                             }
+
                              echo '<td>' . $row["comentario"] . '</td>';
                              echo '<td>' . $row["nome_status"] . '</td>';
 
 
-                                    echo '<td align="center">
-                      <button " class="btn btn-editar btn-sm" data-toggle="modal"
-                               id=' . $row["id_monitor"] . '>
-                            <i class="glyphicon glyphicon-pencil"></i>  Editar
-                        </button>
+                                  echo '<td align="center">
+                        
+    <form  action="editarmonitor.php" method="GET">
+
+
+          <input class="btn btn-success btn-sm" type="hidden"   name="hdmi" id='.$row["hdmi"].' value="'.$row["hdmi"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="dvi" id='.$row["dvi"].' value="'.$row["dvi"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="vga" id='.$row["vga"].' value="'.$row["vga"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="displayport" id='.$row["displayport"].' value="'.$row["displayport"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="autofalante" id='.$row["autofalante"].' value="'.$row["autofalante"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="microfone" id='.$row["microfone"].' value="'.$row["microfone"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"  name="webcam" id='.$row["webcam"].' value='.$row["webcam"].'>
+          <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id='.$row["id_status"].' value='.$row["id_status"].'>
+          <button class="btn btn-success btn-sm" type="submit"  name="id_monitor" id='.$row["id_monitor"].' value='.$row["id_monitor"].'>Editar</button>
+
+    </form>
+
                     </td>
-                </tr>';
+                </tr>'  ;
                          }
 
                      }
@@ -114,7 +165,7 @@ require_once("../../topo.php");
         </div>
     </div>
 </div>
-
+</div>
 
 
 
@@ -123,3 +174,8 @@ require_once("../../topo.php");
 
 
 </body>
+<br><br><br><br><br><br><br><br><br>
+
+<?php
+require_once("../../footer.php")
+?>

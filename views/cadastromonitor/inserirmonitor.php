@@ -22,6 +22,73 @@ $displayport=$_POST["displayport"];
 $microfone=$_POST["microfone"];
 $webcam=$_POST["webcam"];
 
+if ($dvi == 1) {
+
+	$dvi=1;
+} else {
+
+
+	$dvi=0;
+}
+
+if ($vga == 1) {
+
+	$vga=1;
+} else {
+
+
+	$vga=0;
+}
+
+if ($hdmi == 1) {
+
+	$hdmi=1;
+} else {
+
+
+	$hdmi=0;
+}
+
+if ($autofalante == 1) {
+
+	$autofalante=1;
+} else {
+
+
+	$autofalante=0;
+}
+
+
+if ($displayport == 1) {
+
+	$displayport=1;
+} else {
+
+
+	$displayport=0;
+}
+
+if ($microfone == 1) {
+
+	$microfone=1;
+} else {
+
+
+	$microfone=0;
+}
+
+if ($webcam == 1) {
+
+	$webcam=1;
+} else {
+
+
+	$webcam=0;
+}
+
+
+
+
 $sql = "INSERT INTO monitor (comentario,id_fabricante,id_local,id_modelo,id_status,id_user,hdmi,vga,dvi,autofalante,displayport,microfone,webcam)
 	VALUES ('$comentario',$fabricante,$local,$modelo,$status,$user,$hdmi,$vga,$dvi,$autofalante,$displayport,$microfone,$webcam)";
 

@@ -25,7 +25,7 @@ require_once("../../topo.php");
 <div class="container">
     <form action=pdf_impressora.php method=get >
     <button  class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createModal">
-        Imprimir Relatório
+        <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir Relatório
     </button>
         </form>
 
@@ -90,13 +90,16 @@ require_once("../../topo.php");
                         echo '<td>'. $row["nome_status"].'</td>';
 
 
-                          echo '<td align="center">
-                      <button " class="btn btn-editar btn-sm" data-toggle="modal"
-                               id=' . $row["id_impressora"] . '>
-                            <i class="glyphicon glyphicon-pencil"></i>  Editar
-                        </button>
+                         echo '<td align="center">
+                        
+    <form  action="editarimpressora.php" method="GET">
+
+<button class="btn btn-success btn-sm" type="submit"  name="id_impressora" id='.$row["id_impressora"].' value='.$row["id_impressora"].'>Editar</button>
+
+    </form>
+
                     </td>
-                </tr>';
+                </tr>'  ;
                     }
                 }
                 mysqli_close($db);
@@ -108,12 +111,12 @@ require_once("../../topo.php");
         </div>
     </div>
 </div>
-
-
-
-
-
-
+</div>
 
 
 </body>
+<br><br><br><br><br><br><br><br><br>
+
+<?php
+require_once("../../footer.php")
+?>
