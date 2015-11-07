@@ -91,14 +91,6 @@ require_once("../../topo.php");
                         </select>
                     </div>
 
-
-                    <div class="col-md-3">
-                        <label>Responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" />
-                    </div>
-
-
-
                     <div class="col-md-3">
                         <label>Comentário:</label>
                         <textarea class="form-control"  rows="3" type="text" name="coment"/></textarea>

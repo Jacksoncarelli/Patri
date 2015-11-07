@@ -108,7 +108,7 @@ $row = $dados_monitor->fetch_assoc();
 
                     <div class="col-md-3">
                         <label>Contagem atual:</label>
-                        <input class="form-control" type="text" name="contagem_atual" />
+                        <input class="form-control" type="text" name="contagem_atual" value="<?php echo $row['con_atual']?>"/>
                     </div>
 
 
@@ -121,10 +121,7 @@ $row = $dados_monitor->fetch_assoc();
                         <input class="form-control" type="text" name="num_serie" />
                     </div>
 
-                    <div class="col-md-3">
-                        <label>Responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" value="<?php echo $row['responsavel'];?>" />
-                    </div>
+
 
 
 

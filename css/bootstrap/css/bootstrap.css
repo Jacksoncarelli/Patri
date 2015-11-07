@@ -4637,8 +4637,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #282828;
+  border-color: #ffffff;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4689,8 +4689,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #080808;
+  background-color: #141414;
 }
+
+textarea {
+  resize: none;
+}
+
+
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;

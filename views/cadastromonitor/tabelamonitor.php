@@ -163,7 +163,7 @@ require_once("../../topo.php");
                 </tbody>
             </table>
         </div>
-    </div>
+    </div><div class="panel-footer"></div>
 </div>
 </div>
 
@@ -174,7 +174,7 @@ require_once("../../topo.php");
 
 
 </body>
-<br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
 
 <?php
 require_once("../../footer.php")

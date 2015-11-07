@@ -105,19 +105,10 @@ require_once("../../topo.php");
                     </div>
 
 
-                    <div class="col-md-3">
-                        <label>Responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" />
-                    </div>
-
-
-
-
-
 
                     <div class="col-md-3">
                         <label>Comentário:</label>
-                        <textarea class="form-control" rows="2" type="text" name="coment"/></textarea>
+                        <textarea class="form-control" rows="2" type="text"  name="coment"/></textarea>
                     </div>
 
 
@@ -182,9 +173,20 @@ require_once("../../topo.php");
                                         </div>
                                     </form>
                                 </div>
+                                <div class="col-md-3">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="status"  value="1"> Ativo
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="status"  value="2"> Estoque
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="status"  value="3"> Danificado
+                                    </label>
+                                </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Send message</button>
+                                    <br><input class="btn btn-primary " type="submit" value="CADASTRAR"/>
                                 </div>
                             </div>
                         </div>
@@ -200,6 +202,8 @@ require_once("../../topo.php");
                             modal.find('.modal-title').text('New message to ' + recipient)
                             modal.find('.modal-body input').val(recipient)
                         })
+
+
                     </script>
                     <br>
             </div>
@@ -212,10 +216,11 @@ require_once("../../topo.php");
     </form>
 </div>
 </div>
+</body>
 <?php
 require_once("../../footer.php")
 ?>
-</body>
+
 
 
 

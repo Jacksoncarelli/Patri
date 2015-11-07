@@ -109,7 +109,7 @@ require_once("../../topo.php");
                 </tbody>
             </table>
         </div>
-    </div>
+    </div><div class="panel-footer" align="right"></div>
 </div>
 </div>
 

@@ -77,6 +77,58 @@
                     </li>
                 </ul>
             </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+
+                            <li ><a href="../../views/cadastropc/computador.php">Novo Computador</a>
+                            </li>
+                            <li><a href="../../views/cadastroimpressora/impressora.php">Nova Impressora</a></li>
+                            <li><a href="../../views/cadastromonitor/monitor.php">Novo Monitor</a></li>
+                    <li class="divider"></li>
+                    <li ><a href="../../views/cadastropc/computador.php">Fabricante</a>
+                    </li>
+                    <li><a href="../../views/cadastroimpressora/impressora.php">Modelo</a></li>
+                    <li><a href="../../views/cadastromonitor/monitor.php">Local</a></li>
+                    <li><a href="../../views/cadastroimpressora/impressora.php">Sistema Operacional</a></li>
+                        </ul>
+                    </li>
+
+
+            <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Relatórios <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="../../views/cadastropc/tabelapc.php">Computadores</a></li>
+                    <li><a href="../../views/cadastroimpressora/tabelaimpressora.php">Impressoras</a></li>
+                    <li><a href="../../views/cadastromonitor/tabelamonitor.php">Monitores</a></li>
+
+                </ul>
+            </li>
+
+
+
+
+
+
+
+
+
+
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="../../views/cadastrouser/cadastro.php">Cadastro de usuario</a></li>

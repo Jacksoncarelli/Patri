@@ -111,11 +111,6 @@ $row = $dados_monitor->fetch_assoc();
 
 
 
-                    <div class="col-md-3">
-                        <label>Responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" value="<?php echo $row['responsavel'];?>" />
-                    </div>
-
 
 
 

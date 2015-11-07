@@ -1,8 +1,21 @@
 <footer>
 <div class="footer">
     <div class="container">
-        <br>
-        <div align="right"> <p class="text-muted">Projeto em desenvolvimento para aula de Programação WEB</p></div>
+
+        <div align="right"> <p class="text-muted">
+
+           <br>
+
+            Projeto em desenvolvimento para aula de Programação WEB -  <?php
+                $dataHora = date("d/m/Y h:i:s");
+                echo $dataHora;
+                ?>
+
+        </div>
     </div>
 </div>
 </footer>
+
+
+
+<div align="left" class="text-muted"></div>
