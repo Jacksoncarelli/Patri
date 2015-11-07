@@ -10,7 +10,7 @@ protegePagina(); // Chama a função que protege a página
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
 
-    <title>Cadastro Impressora</title>
+    <title>Cadastro de Impressoras</title>
 </head>
 <body>
 <?php
@@ -98,10 +98,6 @@ require_once("../../topo.php");
                         <input class="form-control" type="text" name="num_patrimonio" />
                     </div>
 
-                    <div class="col-md-3">
-                        <label>Responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" />
-                    </div>
 
                     <div class="col-md-3">
                         <label>Numero de série:</label>
@@ -109,6 +105,10 @@ require_once("../../topo.php");
                     </div>
 
 
+                    <div class="col-md-3">
+                        <label>Responsável:</label>
+                        <input class="form-control" type="text" name="responsavel" />
+                    </div>
 
 
 
@@ -122,12 +122,11 @@ require_once("../../topo.php");
 
 
 
-                    <div class="col-md-6">
+
+                    <div class="col-md-12">
                         <label>Possui: </label>
                     </div>
-                     <div class="col-md-5">
-                        <label>Status:</label>
-                    </div>
+
                     <div class="col-md-6">
                         <label class="checkbox-inline">
                             <input type="checkbox" name="port_serial" value="1"> Porta serial
@@ -144,9 +143,13 @@ require_once("../../topo.php");
                             <input type="checkbox"  name="lan" value="1"> Lan
                     </div>
 
+                    <div class="col-md-12">
+                        <br>
+                    </div>
 
-
-                   
+                    <div class="col-md-12">
+                        <label>Status:</label>
+                    </div>
                     <div class="col-md-3">
                         <label class="radio-inline">
                             <input type="radio" name="status"  value="1"> Ativo
@@ -198,36 +201,17 @@ require_once("../../topo.php");
                             modal.find('.modal-body input').val(recipient)
                         })
                     </script>
-
-
-
-                    <br><br>
-
-
-
-
-
-
-
-
-                    <div class="col-md-10">
-                        <br><input class="btn btn-primary " type="submit" value="CADASTRAR"/>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Exemplo de modal</button>
-
-                    </div>
-
-
-
-                </form>
-                <br>
-
-
+                    <br>
             </div>
         </div>
-    </div><!--/col-->
-</div><!--/container-->
-
-</div><!--/wrap-->
+    </div>
+    <div class="col-md-10">
+        <br><input class="btn btn-primary " type="submit" value="CADASTRAR"/>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Exemplo de modal</button>
+    </div>
+    </form>
+</div>
+</div>
 <?php
 require_once("../../footer.php")
 ?>

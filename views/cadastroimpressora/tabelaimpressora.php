@@ -85,7 +85,7 @@ require_once("../../topo.php");
                         echo '<td>' . $row["paralela"] . '</td>';
                         echo '<td>'. $row["nome_fabricante"].'</td>';
                         echo '<td>'. $row["modelo"].'</td>';
-                        echo '<td>'. $row["sigla"].'</td>';
+                        echo '<td>'. $row["sigla_local"].'</td>';
                         echo '<td>' . $row["comentario"] . '</td>';
                         echo '<td>'. $row["nome_status"].'</td>';
 
@@ -93,7 +93,7 @@ require_once("../../topo.php");
                          echo '<td align="center">
                         
     <form  action="editarimpressora.php" method="GET">
-
+  <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id='.$row["id_status"].' value='.$row["id_status"].'>
 <button class="btn btn-success btn-sm" type="submit"  name="id_impressora" id='.$row["id_impressora"].' value='.$row["id_impressora"].'>Editar</button>
 
     </form>

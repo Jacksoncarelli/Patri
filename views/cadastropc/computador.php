@@ -12,7 +12,7 @@ require_once("../../topo.php");
     <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
-    <title>Cadastro Computador</title>
+    <title>Cadastro de Computador</title>
 </head>
 <body>
 
@@ -116,7 +116,7 @@ require_once("../../topo.php");
 
 
 <div class="col-md-3">  
-        <label>Responsável:</label>
+        <label>Usuário responsável:</label>
         <input class="form-control" type="text" name="responsavel" />
 </div>
 
@@ -131,7 +131,7 @@ require_once("../../topo.php");
     </div>
 
 
-<div class="col-md-2"> 
+<div class="col-md-12">
 <label>Status:</label>
 </div>
 <div class="col-md-5">  
@@ -148,21 +148,18 @@ require_once("../../topo.php");
 </div>
 
 
-            <div class="col-md-12">
 
-            </div>
-
-
-
-  <div class="col-md-2">
-     <br><input class="btn btn-primary "  type="submit" value="CADASTRAR"/>
-      </div>
 
 
 
 </div>
 </div>
 </div>
+</div>
+
+
+<div class="col-md-10">
+    <input class="btn btn-primary "  type="submit" value="CADASTRAR"/>
 </div>
 </div>
 </div>
