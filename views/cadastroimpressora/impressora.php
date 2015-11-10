@@ -17,42 +17,31 @@ protegePagina(); // Chama a função que protege a página
 require_once("../../topo.php");
 ?>
 
-<script>
-    function getFabricante(val) {
-        $.ajax({
-            type: "POST",
-            url: "get_modelo.php",
-            data:'fabricante_id='+val,
-            success: function(data){
-                $("#modelo-list").html(data);
-            }
-        });
-    }
-</script>
 
 
-<br>
-<div class="col-xs-12">
-    <div class="panel">
 
-        <div class="panel-heading">
-            <label><div class="" align="left">Cadastro de impressoras</label></div>
-        <hr>
-        <div class="col-xs-12">
-            <div class="panel-body">
+            <br>
+            <div class="col-xs-12">
+                <div class="panel">
 
-                <form  class="form-horizontal" action="inseririmpressora.php " method="post">
+                    <div class="panel-heading">
+                        <label><div class="" align="left">Cadastro de impressoras</label></div>
+                    <hr>
+                    <div class="col-xs-12">
+                        <div class="panel-body">
 
-                    <div class="col-md-3">
-                        <label>local:</label>
-                        <select class="form-control" name=local required>
-                            <option disabled selected>Selecione uma opção</option>
-                            <?php
-                            $sistemas=mysql_query("SELECT nome_local,id_local FROM local");
-                            while($tbl=mysql_fetch_array($sistemas)){
-                                $nome_sistemas=$tbl['nome_local'];
-                                $id=$tbl['id_local'];
-                                ?>
+                            <form  class="form-horizontal" action="inseririmpressora.php " method="post">
+
+                                <div class="col-md-3">
+                                    <label>local:</label>
+                                    <select class="form-control" name=local required>
+                                        <option disabled selected>Selecione uma opção</option>
+                                        <?php
+                                        $sistemas=mysql_query("SELECT nome_local,id_local FROM local");
+                                        while($tbl=mysql_fetch_array($sistemas)){
+                                            $nome_sistemas=$tbl['nome_local'];
+                                            $id=$tbl['id_local'];
+                                            ?>
                                 <option value="<?php echo $id?>">
                                     <?php echo $nome_sistemas ?></option>
                             <?php } ?>
@@ -63,16 +52,18 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Fabricante:</label>
-                        <select class="form-control" name=fabricante id="fabricante-list" onChange="getFabricante(this.value);">
+                        <select class="form-control" name=fabricante id="fabricante-list" onchange="getFabricante()" >
                             <option >Selecione uma opção</option>
 
                             <?php
-                            foreach($results as $country) {
+                            $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
+                            while($tbl=mysql_fetch_array($sistemas)){
+                                $nome_sistemas=$tbl['nome_fabricante'];
+                                $id=$tbl['id_fabricante'];
                                 ?>
-                                <option value="<?php echo $country["id_fabricante"]; ?>"><?php echo $country["nome_fabricante"]; ?></option>
-                                <?php
-                            }
-                            ?>
+                                <option value="<?php echo $id?>">
+                                    <?php echo $nome_sistemas ?></option>
+                            <?php } ?>
                         </select>
                     </div>
 
@@ -216,6 +207,27 @@ require_once("../../topo.php");
     </form>
 </div>
 </div>
+<script>
+
+
+
+
+    function getFabricante() {
+        var val=$('#fabricante-list').val();
+        $.ajax({
+            method: "get",
+            url: "get_modelo.php",
+            data: 'id_fabricante=' + val,
+            success: function (data) {
+
+             alert(data);
+
+            }
+        });
+    }
+
+
+</script>
 </body>
 <?php
 require_once("../../footer.php")

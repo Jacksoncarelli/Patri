@@ -207,7 +207,6 @@ $row = $dados_monitor->fetch_assoc();
 <form  class="form-horizontal" action="deletarimpressora.php " method="GET">
     <div class="col-md-1  "
     <br><button class="btn btn-danger excluir" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>'>DELETAR</button>
-
     </div>
 
 

@@ -195,8 +195,7 @@ $row = $dados_pc->fetch_assoc();
     </form>
     </div>
 <div class="col-md-5">
-    <button class="btn btn-primary" href=".." '>VOLTAR</button>
-
+    <button class="btn btn-primary" location.href="tabelapc.php">VOLTAR</button>
 </div>
 </div>
 </div>
