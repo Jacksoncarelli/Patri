@@ -11,32 +11,48 @@ protegePagina(); // Chama a função que protege a página
  <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
  <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
+ <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
  <?php
  require_once("../../topo.php");
  ?>
  </head>
+<style type="text/css">
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+	.fadeIn {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 80px;
+}
+</style>
+
 
  <title>Sistema de Inventário</title></head>
-<body>
+<body >
+<Br><Br><Br><Br><Br><Br><Br>
+<h1 align="center" class="fadeIn"> Seja bem vindo!!</h1>
 
-<h1> &nbsp&nbspSeja bem vindo!!</h1>
-
-<br>
-Perguntar sobre o status, se vai ficar no banco ou só no checkbox
-<br><br>
-TROCAR OS TIPOS DOS VALORES EM IMPRESSORA E MONITOR COLOCAR BOOLEAN
-<br><br>
-VER QUESTAO DO RESPONSÁVEL
-<br><br>
-MUDAR NA TABELA IMPRESSORA O CAMPO "ID_FABRINCANTE"
-<br><br>
- MONITOR NAO POSSUI NUM_PATRIMONIO
- <br><br>
- MONITOR NAO POSSUI NUMERO DE SÉRIE
-  <br><br>
- MONITOR NAO POSSUI RESPONSÁVEL
-  <br><br>
-  FAZER UM FOOTER
  </body>
 
 <?php

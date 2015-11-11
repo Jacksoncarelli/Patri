@@ -53,7 +53,7 @@ require_once("../../topo.php");
                     </div>
 
                     <div class="col-md-3">
-                        <label ">Numero de Patrimônio:</label>
+                        <label>Numero de Patrimônio:</label>
                         <input class="form-control" type="text" name="num_patrimonio" />
                     </div>
 
@@ -84,7 +84,7 @@ require_once("../../topo.php");
                                 $id=$tbl['id_modelo'];
                                 ?>
                                 <option value="<?php echo $id?>">
-                                    "<?php echo $nome_sistemas ?></option>
+                                    <?php echo $nome_sistemas ?></option>
                                 <?php
                             }
                             ?>

@@ -7,8 +7,8 @@
            <br>
 
             Projeto em desenvolvimento para aula de Programação WEB -  <?php
-                $dataHora = date("d/m/Y h:i:s");
-                echo $dataHora;
+                $data = date("d/m/Y");
+                echo $data;
                 ?>
 
         </div>

@@ -12,6 +12,7 @@ require_once("../../topo.php");
     <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
+
     <title>Cadastro de Computador</title>
 </head>
 <body>
@@ -30,17 +31,17 @@ require_once("../../topo.php");
 
       <div class="col-md-3">      
     <label>Nome:</label>
-    <input class="form-control" type="text" name="nome" />
+    <input class="form-control" type="text" name="nome"  data-minlength="5" data-msgrequired="Este campo deve ser preenchido" required/>
     </div>
 
 <div class="col-md-3">  
     <label>Numero de série:</label>
-    <input class="form-control" type="text" name="num_serie" />
+    <input class="form-control" type="text" name="num_serie" required />
 </div>
 
 <div class="col-md-3 ">  
         <label>Sistema Operacional:</label>
-            <select class="form-control" name=so required>
+            <select class="form-control" name=so required >
                 <option disabled selected>Selecione uma opção</option>
                 <?php
                 $sistemas=mysql_query("SELECT nome_so,id_so FROM sistema_operacional");
@@ -56,13 +57,16 @@ require_once("../../topo.php");
 
 <div class="col-md-3">  
     <label>Serial do SO:</label>
-    <input class="form-control" type="text" name="serial_so" />
+    <input class="form-control" type="text" name="serial_so" required/>
 </div>
 
+<div class="col-md-12">
+    <br>
+</div>
 
 <div class="col-md-3">  
     <label>Numero de Patrimônio:</label>
-    <input class="form-control" type="text" name="num_patrimonio" />
+    <input class="form-control" type="text" name="num_patrimonio" required/>
 </div>
 
 <div class="col-md-3">  
@@ -115,6 +119,10 @@ require_once("../../topo.php");
 </div>
 
 
+<div class="col-md-12">
+    <br>
+</div>
+
 <div class="col-md-3">  
         <label>Usuário responsável:</label>
         <input class="form-control" type="text" name="responsavel" />
@@ -160,11 +168,13 @@ require_once("../../topo.php");
 
 <div class="col-md-10">
     <input class="btn btn-primary "  type="submit" value="CADASTRAR"/>
+    </div>
+    </form>
 </div>
 </div>
 </div>
 </body>
-
+<script src="../../css/bootstrap/js/validaform.js"></script>
 <?php
 require_once("../../footer.php")
 ?>
