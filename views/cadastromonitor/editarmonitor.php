@@ -1,7 +1,6 @@
 <?php
 include("../../seguranca.php"); // Inclui o arquivo com o sistema de segurança
 protegePagina(); // Chama a função que protege a página
-
 ?>
 <?php
 require_once("../../topo.php");
@@ -37,7 +36,6 @@ $sql = "SELECT * FROM monitor LEFT JOIN local ON monitor.id_local = local.id_loc
 $dados_monitor = mysqli_query($db, $sql);
 $row = $dados_monitor->fetch_assoc();
 ?>
-
 <body>
 
 <br>
@@ -72,7 +70,7 @@ $row = $dados_monitor->fetch_assoc();
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="text" name="num_patrimonio" />
+                        <input class="form-control" type="number" name="num_patrimonio" />
                     </div>
 
                     <div class="col-md-3">
@@ -108,16 +106,25 @@ $row = $dados_monitor->fetch_assoc();
                         </select>
                     </div>
 
+<div class="col-md-12">
+    <br>
+</div>
 
 
-
-
+                     <div class="col-md-3">
+                        <label>Tamanho:</label>
+                        <input class="form-control"  type="number" name="tamanho"/></input>
+                    </div>
 
 
                     <div class="col-md-3">
                         <label>Comentário:</label>
                         <textarea class="form-control" rows="3" type="text" name="coment"/><?php echo $row['comentario'] ?></textarea>
                     </div>
+
+<div class="col-md-12">
+    <br>
+</div>
 
 
                     <div class="col-md-10">
@@ -130,16 +137,20 @@ $row = $dados_monitor->fetch_assoc();
                         <label class="checkbox-inline">
                             <input type="checkbox"  name="vga" <?php if ($vga==1){ echo "checked='checked'";} ?> value="1"> VGA
                         </label>
+
                         <label class="checkbox-inline">
                             <input type="checkbox"  name="dvi" <?php if ($dvi==1){ echo "checked='checked'";} ?> value="1"> DVI
                         </label>
                         <label class="checkbox-inline">
                             <input type="checkbox" name="displayport" <?php if ($displayport==1){ echo "checked='checked'";} ?> value="1"> Displayport
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
                             <input type="checkbox" name="autofalante" <?php if ($autofalante==1){ echo "checked='checked'";} ?> value="1"> Auto Falante
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
                             <input type="checkbox" name="microfone" <?php if ($microfone==1){ echo "checked='checked'";} ?> value="1"> Microfone
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
                             <input type="checkbox" name="webcam" <?php if ($webcam==1){ echo "checked='checked'";} ?> value="1"> Webcam
 
                     </div>
@@ -161,13 +172,40 @@ $row = $dados_monitor->fetch_assoc();
                         <label class='radio-inline'>
                             <input type='radio' <?php if ($id_status==3){ echo "checked='checked'";} ?> name='status' id='radio1' value='3'> Danificado
                         </label>
-                    </div>
+                    </div><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
 
+
+<!--                        <div class="modal-dialog" role="document">-->
+<!--                            <div class="modal-content">-->
+<!--                                <div class="modal-header">-->
+<!--                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+<!--                                    <h4 class="modal-title" id="exampleModalLabel">Confirmar exclusão</h4>-->
+<!--                                </div>-->
+<!--                                <div class="modal-body">-->
+<!--                                    <label>Tem certeza de que deseja excluir?</label>-->
+<!---->
+<!--                                </div>-->
+<!--                                <div class="modal-footer">-->
+<!---->
+<!--                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>-->
+<!--                                    <form  action="deletarmonitor.php " method="POST"> <button class="btn btn-danger excluir"  name="id_monitor"  value='--><?php //echo $_GET['id_monitor'] ?><!--'>Confirmar</button>-->
+<!--                                    </form>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
             </div>
         </div>
+
     </div>
+
 </div>
+
 <div class="col-md-1">
+    <button class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
+
+</div>
+<div class="col-md-10">
 
     <input class="btn btn-success btn-sm" type="hidden"   name="hdmi" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
     <input class="btn btn-success btn-sm" type="hidden"   name="dvi" id="<?php echo $dvi ?>" value="<?php echo $dvi ?>"/>
@@ -182,14 +220,18 @@ $row = $dados_monitor->fetch_assoc();
     </form>
 
 </div>
-<form  class="form-horizontal" action="deletarmonitor.php " method="GET">
+
+    <form action="deletarmonitor.php " method="POST">
     <div class="col-md-1  "
-    <br><button class="btn btn-danger excluir" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>'>DELETAR</button>
 
-    </div>
-
-
+    <br><button class="btn btn-danger excluir" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"  ><span  class="glyphicon glyphicon-trash"></span></button>
+        </div>
 </form>
+
+
+
+
+
 </div>
 </div>
 </body>

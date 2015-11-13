@@ -45,6 +45,10 @@ h1 {
 	font-family: 'Poiret One', cursive;
 	font-size: 80px;
 }
+h2 {
+	font-family: 'Poiret One', cursive;
+	font-size: 50px;
+}
 </style>
 
 
@@ -52,6 +56,7 @@ h1 {
 <body >
 <Br><Br><Br><Br><Br><Br><Br>
 <h1 align="center" class="fadeIn"> Seja bem vindo!!</h1>
+<h2 align="center" class="fadeIn"> SisPatrimoio</h2>
 
  </body>
 

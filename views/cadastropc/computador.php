@@ -31,17 +31,17 @@ require_once("../../topo.php");
 
       <div class="col-md-3">      
     <label>Nome:</label>
-    <input class="form-control" type="text" name="nome"  data-minlength="5" data-msgrequired="Este campo deve ser preenchido" required/>
+    <input class="form-control" type="text" name="nome" data-msgrequired="Este campo deve ser preenchido" required/>
     </div>
 
 <div class="col-md-3">  
     <label>Numero de série:</label>
-    <input class="form-control" type="text" name="num_serie" required />
+    <input class="form-control" type="text" name="num_serie" />
 </div>
 
 <div class="col-md-3 ">  
         <label>Sistema Operacional:</label>
-            <select class="form-control" name=so required >
+            <select class="form-control" name=so>
                 <option disabled selected>Selecione uma opção</option>
                 <?php
                 $sistemas=mysql_query("SELECT nome_so,id_so FROM sistema_operacional");
@@ -57,7 +57,7 @@ require_once("../../topo.php");
 
 <div class="col-md-3">  
     <label>Serial do SO:</label>
-    <input class="form-control" type="text" name="serial_so" required/>
+    <input class="form-control" type="text" name="serial_so"/>
 </div>
 
 <div class="col-md-12">
@@ -66,7 +66,7 @@ require_once("../../topo.php");
 
 <div class="col-md-3">  
     <label>Numero de Patrimônio:</label>
-    <input class="form-control" type="text" name="num_patrimonio" required/>
+    <input class="form-control" type="number" name="num_patrimonio" onl/>
 </div>
 
 <div class="col-md-3">  
@@ -175,7 +175,8 @@ require_once("../../topo.php");
 </div>
 </body>
 <script src="../../css/bootstrap/js/validaform.js"></script>
+
+</html>
 <?php
 require_once("../../footer.php")
 ?>
-</html>

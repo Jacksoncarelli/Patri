@@ -34,66 +34,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
       
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Inventário</a>
-                        <ul class="dropdown-menu">
-                            <li ><a href="../../views/cadastropc/computador.php">Computador</a>
-                               </li>
-                            <li><a href="../../views/cadastroimpressora/impressora.php">Impressora</a></li>
-                            <li><a href="../../views/cadastromonitor/monitor.php">Monitor</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Relatórios</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../views/cadastropc/tabelapc.php">Computadores</a></li>
-                            <li><a href="../../views/cadastroimpressora/tabelaimpressora.php">Impressoras</a></li>
-                            <li><a href="../../views/cadastromonitor/tabelamonitor.php">Monitores</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                                    <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                                    <li class="divider"></li>
-                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4.3</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Dropdown Submenu Link 5.4.3.1</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.3.2</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.3.3</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.3.4</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4.4</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Dropdown Submenu Link 5.4.4.1</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.4.2</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.4.3</a></li>
-                                            <li><a href="#">Dropdown Submenu Link 5.4.4.4</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
             <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
                 <ul class="dropdown-menu">
 

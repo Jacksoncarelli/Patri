@@ -80,13 +80,19 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Contagem atual:</label>
-                        <input class="form-control" type="text" name="contagem_atual" />
+                        <input class="form-control" type="number" name="contagem_atual" />
                     </div>
+
+
+
+<div class="col-md-12">
+    <br>
+</div>
 
 
                     <div class="col-md-3">
                         <label >Numero de Patrimônio:</label>
-                        <input class="form-control" type="text" name="num_patrimonio" />
+                        <input class="form-control" type="number" name="num_patrimonio" />
                     </div>
 
 
@@ -183,19 +189,7 @@ require_once("../../topo.php");
                         </div>
                     </div>
 
-                    <script>
-                        $('#exampleModal').on('show.bs.modal', function (event) {
-                            var button = $(event.relatedTarget) // Button that triggered the modal
-                            var recipient = button.data('whatever') // Extract info from data-* attributes
-                            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-                            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-                            var modal = $(this)
-                            modal.find('.modal-title').text('New message to ' + recipient)
-                            modal.find('.modal-body input').val(recipient)
-                        })
 
-
-                    </script>
                     <br>
             </div>
         </div>
@@ -217,18 +211,22 @@ require_once("../../topo.php");
         $.ajax({
             method: "get",
             url: "get_modelo.php",
-            data: 'id_fabricante=' + val,
+            data: 'id=' + val,
             success: function (data) {
 
-             alert(data);
+             console.log(data);
 
             }
         });
+
+        $.get('get_modelo.php','')
     }
 
 
 </script>
 </body>
+<script src="../../css/bootstrap/js/validaform.js"></script>
+
 <?php
 require_once("../../footer.php")
 ?>

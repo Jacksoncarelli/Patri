@@ -54,7 +54,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="text" name="num_patrimonio" />
+                        <input class="form-control" type="number" name="num_patrimonio" />
                     </div>
 
                     <div class="col-md-3">
@@ -90,6 +90,16 @@ require_once("../../topo.php");
                             ?>
                         </select>
                     </div>
+
+
+<div class="col-md-12">
+    <br>
+</div>
+                    <div class="col-md-3">
+                        <label>Tamanho:</label>
+                        <input class="form-control"  type="number" name="tamanho"/></input>
+                    </div>
+
 
                     <div class="col-md-3">
                         <label>Comentário:</label>
@@ -163,7 +173,11 @@ require_once("../../topo.php");
 </div>
 </div>
 </body>
+<script src="../../css/bootstrap/js/validaform.js"></script>
 
 
 
 </html>
+<?php
+require_once("../../footer.php")
+?>

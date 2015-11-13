@@ -87,7 +87,7 @@ require_once("../../topo.php");
 
                         echo '<td align="center">
                         
-    <form  action="editarpc.php " method="GET">
+    <form  action="editarpc.php" method="GET">
 
 
           <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>

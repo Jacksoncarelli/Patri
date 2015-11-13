@@ -108,13 +108,17 @@ $row = $dados_monitor->fetch_assoc();
 
                     <div class="col-md-3">
                         <label>Contagem atual:</label>
-                        <input class="form-control" type="text" name="contagem_atual" value="<?php echo $row['con_atual']?>"/>
+                        <input class="form-control" type="number" name="contagem_atual" value="<?php echo $row['con_atual']?>"/>
                     </div>
+
+<div class="col-md-12">
+    <br>
+</div>
 
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="text" name="num_patrimonio" />
+                        <input class="form-control" type="number" name="num_patrimonio" />
                     </div>
                     <div class="col-md-3">
                         <label>Numero de série:</label>
@@ -190,6 +194,10 @@ $row = $dados_monitor->fetch_assoc();
 </div>
 </div>
 <div class="col-md-1">
+    <button title="Voltar" class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
+
+</div>
+<div class="col-md-10">
 
     <input class="btn btn-success btn-sm" type="hidden"   name="hdmi" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
     <input class="btn btn-success btn-sm" type="hidden"   name="dvi" id="<?php echo $dvi ?>" value="<?php echo $dvi ?>"/>
@@ -205,8 +213,8 @@ $row = $dados_monitor->fetch_assoc();
 
 </div>
 <form  class="form-horizontal" action="deletarimpressora.php " method="GET">
-    <div class="col-md-1  "
-    <br><button class="btn btn-danger excluir" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>'>DELETAR</button>
+    <div class="col-md-1"
+    <br><button class="btn btn-danger excluir" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"><span  class="glyphicon glyphicon-trash"></span></button>
     </div>
 
 

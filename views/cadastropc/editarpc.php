@@ -87,11 +87,15 @@ $row = $dados_pc->fetch_assoc();
                         <input class="form-control" type="text" name="serial_so" value="<?php echo $row['serial_so'] ?>" />
                     </div>
 
+<div class="col-md-12">
+    <br>
+</div>
+
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
 
-                        <input class="form-control" type="text" name="num_patrimonio" value="<?php echo $row['num_patrimonio'] ?>" />
+                        <input class="form-control" type="number" name="num_patrimonio" value="<?php echo $row['num_patrimonio'] ?>" />
                     </div>
 
                     <div class="col-md-3">
@@ -143,6 +147,10 @@ $row = $dados_pc->fetch_assoc();
                         </select>
                     </div>
 
+<div class="col-md-12">
+    <br>
+</div>
+
 
                     <div class="col-md-3">
                         <label>Responsável:</label>
@@ -186,17 +194,22 @@ $row = $dados_pc->fetch_assoc();
     </div>
 </div>
 <div class="col-md-1">
-    <input class="btn btn-success"  type="submit"  value="ATUALIZAR"/>
-    </form>
+    <button title="Voltar" class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
+
 </div>
+<div class="col-md-10">
+        <button class="btn btn-success" title="Atualizar computador" class="" type="submit" >ATUALIZAR</button>
+  </div>  </form>
+
+
+    
+
 <div class="col-md-1">
     <form  class="form-horizontal" action="deletarpc.php " method="GET">
-        <button class="btn btn-danger excluir" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>'>DELETAR</button>
-    </form>
+        <button title="Deletar computador" class="btn btn-danger excluir" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"><span  class="glyphicon glyphicon-trash"></span></button>
     </div>
-<div class="col-md-5">
-    <button class="btn btn-primary" location.href="tabelapc.php">VOLTAR</button>
-</div>
+
+    </form>
 </div>
 </div>
 

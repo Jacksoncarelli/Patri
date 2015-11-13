@@ -11,7 +11,7 @@ $fabricante=$_POST["fabricante"];
 $local=$_POST["local"];
 $so=$_POST["so"];
 $responsavel=$_POST["responsavel"];
-$modelo=$_POST["modelo"];				
+$modelo=$_POST["modelo"];
 $status=$_POST["status"];
 $comentario=$_POST["coment"];
 $user=$_SESSION['usuarioID'];
@@ -22,11 +22,14 @@ $sql = "INSERT INTO computador (nome,serial_so,num_serie,comentario,id_fabricant
 
 if($db->query($sql)){
 
-    echo "<script>top.location.href='computador.php';</script>";
+    echo "<script>alert('Computador cadastrado com sucesso!');top.location.href='computador.php';</script>";
 }
 else
 	{
-		echo " nome: ".$nome,
+		echo "$sql ",
+		'<br>'.
+		'<br>'.
+				" nome: ".$nome,
 			" serial: ".$serial_so,
 			" numero serie: ".$num_serie,
 			" fabricante: ".$fabricante,

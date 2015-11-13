@@ -16,18 +16,63 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Patri" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap.css">
+      <file leaf-file-name="impressora.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/impressora.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27272728">
-              <caret line="4691" column="27" selection-start-line="4691" selection-start-column="21" selection-end-line="4691" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="0.2627866">
+              <caret line="211" column="15" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
+              <folding>
+                <marker date="1447312544399" expanded="true" signature="1422:1459" placeholder="SELECT nome_..local..." />
+                <marker date="1447312544399" expanded="true" signature="2345:2397" placeholder="SELECT nome_..fabricante..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editarimpressora.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/editarimpressora.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="35" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="35" />
+              <folding>
+                <marker date="1447309351332" expanded="true" signature="853:1316" placeholder="SELECT * FRO..monitor..." />
+                <marker date="1447309351332" expanded="true" signature="2173:2210" placeholder="SELECT nome_..local..." />
+                <marker date="1447309351332" expanded="true" signature="3067:3119" placeholder="SELECT nome_..fabricante..." />
+                <marker date="1447309351332" expanded="true" signature="3965:4000" placeholder="SELECT model..modelo..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_modelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/get_modelo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <marker date="1447312290907" expanded="true" signature="220:263" placeholder="SELECT * FRO..modelo..." />
+                <marker date="1447312290907" expanded="true" signature="220:267" placeholder="SELECT * FRO..modelo..." />
+                <marker date="1447312290907" expanded="true" signature="220:278" placeholder="SELECT * FRO..modelo..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,8 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/cadastrouser/cadastro.php" />
-        <option value="$PROJECT_DIR$/conexao.php" />
         <option value="$PROJECT_DIR$/login/logout.php" />
         <option value="$PROJECT_DIR$/../projetosigal/sigal/.env" />
         <option value="$PROJECT_DIR$/login/seguranca.php" />
@@ -51,7 +94,6 @@
         <option value="$PROJECT_DIR$/login/login.php" />
         <option value="$PROJECT_DIR$/login/css/style.css" />
         <option value="$PROJECT_DIR$/views/cadastrouser/inserirusuario.php" />
-        <option value="$PROJECT_DIR$/views/cadastropc/inserirpc.php" />
         <option value="$PROJECT_DIR$/views/cadastroimpressora/inseririmpressora.php" />
         <option value="$PROJECT_DIR$/views/cadastromonitor/inserirmonitor.php" />
         <option value="$PROJECT_DIR$/views/erros/404.html" />
@@ -74,23 +116,26 @@
         <option value="$PROJECT_DIR$/../dependente/dbcontroller.php" />
         <option value="$PROJECT_DIR$/views/cadastropc/tabelapc.php" />
         <option value="$PROJECT_DIR$/views/cadastroimpressora/salvarimpressora.php" />
-        <option value="$PROJECT_DIR$/views/cadastropc/computador.php" />
         <option value="$PROJECT_DIR$/topo.php" />
         <option value="$PROJECT_DIR$/views/cadastroimpressora/tabelaimpressora.php" />
         <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/menu.css" />
         <option value="$PROJECT_DIR$/views/cadastromonitor/tabelamonitor.php" />
         <option value="$PROJECT_DIR$/views/index/index.php" />
-        <option value="$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php" />
-        <option value="$PROJECT_DIR$/views/cadastromonitor/monitor.php" />
-        <option value="$PROJECT_DIR$/views/cadastroimpressora/get_modelo.php" />
-        <option value="$PROJECT_DIR$/views/cadastroimpressora/impressora.php" />
-        <option value="$PROJECT_DIR$/views/cadastroimpressora/editarimpressora.php" />
-        <option value="$PROJECT_DIR$/views/cadastropc/editarpc.php" />
         <option value="$PROJECT_DIR$/../../apps/phpmyadmin4.1.14/config.inc.php" />
         <option value="$PROJECT_DIR$/../sigal/.env" />
         <option value="//192.168.1.7/Sistema/cadleitor.html" />
         <option value="$PROJECT_DIR$/css/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/views/cadastroimpressora/confirmarexclusao.php" />
+        <option value="$PROJECT_DIR$/views/cadastromonitor/deletarmonitor.php" />
+        <option value="$PROJECT_DIR$/views/cadastropc/inserirpc.php" />
+        <option value="$PROJECT_DIR$/views/cadastropc/computador.php" />
+        <option value="$PROJECT_DIR$/views/cadastropc/editarpc.php" />
+        <option value="$PROJECT_DIR$/views/cadastromonitor/monitor.php" />
+        <option value="$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php" />
+        <option value="$PROJECT_DIR$/views/cadastroimpressora/editarimpressora.php" />
+        <option value="$PROJECT_DIR$/views/cadastroimpressora/get_modelo.php" />
+        <option value="$PROJECT_DIR$/views/cadastroimpressora/impressora.php" />
       </list>
     </option>
   </component>
@@ -151,7 +196,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,7 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,11 +238,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="cadastropc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,20 +256,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="cadastromonitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Patri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Patri" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cadastroimpressora" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,6 +309,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="840" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\Patri\views\cadastromonitor" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -299,23 +363,40 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3272328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35325265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33207262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -335,41 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/seguranca.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.028764805">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.055105347">
-          <caret line="261" column="53" selection-start-line="261" selection-start-column="47" selection-end-line="261" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/valida.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5465313">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6040609">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastrouser/inserirusuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sigal/resources/views/professores/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40270728">
@@ -381,13 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/inserirmonitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6903553">
-          <caret line="24" column="112" selection-start-line="24" selection-start-column="112" selection-end-line="24" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -499,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastropc/inserirpc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10829103">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08629441">
@@ -548,20 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastropc/deletarpc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastropc/computador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6423729">
-          <caret line="119" column="65" selection-start-line="119" selection-start-column="54" selection-end-line="119" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/menu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7118644">
@@ -590,20 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6363635">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/monitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29661018">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5772496">
@@ -618,67 +622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/inseririmpressora.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4118644">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/get_modelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23050848">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/editarimpressora.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58305085">
-          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
-          <folding>
-            <marker date="1447131338447" expanded="true" signature="853:1316" placeholder="SELECT * FRO..monitor..." />
-            <marker date="1447131338447" expanded="true" signature="2173:2210" placeholder="SELECT nome_..local..." />
-            <marker date="1447131338447" expanded="true" signature="3067:3119" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1447131338447" expanded="true" signature="3965:4000" placeholder="SELECT model..modelo..." />
-            <marker date="1447131338447" expanded="true" signature="5201:5360" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastropc/editarpc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5898305">
-          <caret line="197" column="48" selection-start-line="197" selection-start-column="48" selection-end-line="197" selection-end-column="48" />
-          <folding>
-            <marker date="1447131441934" expanded="true" signature="649:1241" placeholder="SELECT * FRO..computador..." />
-            <marker date="1447131441934" expanded="true" signature="2892:2937" placeholder="SELECT nome_..sistema_operacional..." />
-            <marker date="1447131441934" expanded="true" signature="4303:4355" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1447131441934" expanded="true" signature="5201:5236" placeholder="SELECT model..modelo..." />
-            <marker date="1447131441934" expanded="true" signature="6069:6106" placeholder="SELECT nome_..local..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/impressora.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27966103">
-          <caret line="188" column="38" selection-start-line="188" selection-start-column="38" selection-end-line="188" selection-end-column="38" />
-          <folding>
-            <marker date="1447047514577" expanded="true" signature="1422:1459" placeholder="SELECT nome_..local..." />
-            <marker date="1447047514577" expanded="true" signature="2345:2397" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1447047514577" expanded="true" signature="8694:9217" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/deletarimpressora.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43220338">
           <caret line="15" column="112" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="112" />
-          <folding>
-            <marker date="1446775656089" expanded="true" signature="267:310" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28135592">
           <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,19 +647,158 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78474575">
           <caret line="117" column="57" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
-          <folding>
-            <marker date="1446885364001" expanded="true" signature="1916:2360" placeholder="SELECT * FRO..monitor..." />
-            <marker date="1446885364001" expanded="true" signature="5094:6414" placeholder="..." />
-            <marker date="1446885364001" expanded="true" signature="5171:6387" placeholder="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/1a2cc843-2c3a-4403-988f-45062999f11a">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>1a2cc843-2c3a-4403-988f-45062999f11a</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="224.0" y="283.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1a2cc843-2c3a-4403-988f-45062999f11a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/inseririmpressora.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73015875">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/inserirmonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/deletarmonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastropc/inserirpc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.773585">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27272728">
-          <caret line="4691" column="27" selection-start-line="4691" selection-start-column="21" selection-end-line="4691" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.12345679">
+          <caret line="4686" column="1" selection-start-line="4686" selection-start-column="1" selection-end-line="4686" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastropc/computador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2545455">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastropc/deletarpc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastropc/editarpc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80669147">
+          <caret line="97" column="64" selection-start-line="97" selection-start-column="64" selection-end-line="97" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/monitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5636363">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36431226">
+          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/get_modelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <marker date="1447312290907" expanded="true" signature="220:263" placeholder="SELECT * FRO..modelo..." />
+            <marker date="1447312290907" expanded="true" signature="220:267" placeholder="SELECT * FRO..modelo..." />
+            <marker date="1447312290907" expanded="true" signature="220:278" placeholder="SELECT * FRO..modelo..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/editarimpressora.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="35" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="35" />
+          <folding>
+            <marker date="1447309351332" expanded="true" signature="853:1316" placeholder="SELECT * FRO..monitor..." />
+            <marker date="1447309351332" expanded="true" signature="2173:2210" placeholder="SELECT nome_..local..." />
+            <marker date="1447309351332" expanded="true" signature="3067:3119" placeholder="SELECT nome_..fabricante..." />
+            <marker date="1447309351332" expanded="true" signature="3965:4000" placeholder="SELECT model..modelo..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/combo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3153457">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2892416">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cadastroimpressora/impressora.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2627866">
+          <caret line="211" column="15" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
+          <folding>
+            <marker date="1447312544399" expanded="true" signature="1422:1459" placeholder="SELECT nome_..local..." />
+            <marker date="1447312544399" expanded="true" signature="2345:2397" placeholder="SELECT nome_..fabricante..." />
+          </folding>
         </state>
       </provider>
     </entry>

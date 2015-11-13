@@ -189,6 +189,7 @@ html {
 }
 body {
     margin: 0 0 60px; /* altura do seu footer */
+    height: 730px;
 }
 
 footer {
@@ -200,4 +201,6 @@ footer {
     background-color: #0e0e0e;
 }
 
-
+.container {
+    overflow: hidden;
+}
