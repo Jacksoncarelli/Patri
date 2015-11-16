@@ -57,11 +57,12 @@ h2 {
 <Br><Br><Br><Br><Br><Br><Br>
 <h1 align="center" class="fadeIn"> Seja bem vindo!!</h1>
 <h2 align="center" class="fadeIn"> SisPatrimoio</h2>
-
- </body>
+<div class="push"></div>
 
 <?php
 require_once("../../footer.php")
 ?>
+ </body>
+
 
 </html>

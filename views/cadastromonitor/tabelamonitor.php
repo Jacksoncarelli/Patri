@@ -19,10 +19,6 @@ require_once("../../topo.php");
 </head>
 <body>
 
-
-
-
-
 <div class="container">
 
     <form action="pdf_monitor.php">
@@ -153,10 +149,10 @@ require_once("../../topo.php");
 
 
                 </tbody>
+
             </table>
         </div>
     </div><div class="panel-footer"></div>
-</div>
 </div>
 
 
@@ -166,7 +162,7 @@ require_once("../../topo.php");
 
 
 </body>
-    <br><br><br><br>
+
 
 <?php
 require_once("../../footer.php")

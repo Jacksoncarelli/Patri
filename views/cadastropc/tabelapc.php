@@ -113,9 +113,9 @@ require_once("../../topo.php");
 </div>
 
 </div>
+
+    <?php
+    require_once("../../footer.php")
+    ?>
 </body>
 <br><br>
-
-<?php
-require_once("../../footer.php")
-?>

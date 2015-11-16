@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link href="../../css/bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
+
 </head>
 
 <script>(function($){
@@ -20,6 +21,34 @@
         });
     })(jQuery);
 </script>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Novo de Fabricante</h4>
+                </div>
+                <div class="modal-body">
+
+                        <label> Nome: </label>
+                        <input class="form-control" height="100px" type="text" name="nome" required/>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 <nav class="navbar navbar-inverse navbar-static-top marginBottom-0" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -33,8 +62,8 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-      
-            
+
+
             <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
                 <ul class="dropdown-menu">
 
@@ -43,7 +72,7 @@
                             <li><a href="../../views/cadastroimpressora/impressora.php">Nova Impressora</a></li>
                             <li><a href="../../views/cadastromonitor/monitor.php">Novo Monitor</a></li>
                     <li class="divider"></li>
-                    <li ><a href="../../views/cadastropc/computador.php">Fabricante</a>
+                    <li ><a href="#" data-toggle="modal" data-target="#myModal">Fabricante</a>
                     </li>
                     <li><a href="../../views/cadastroimpressora/impressora.php">Modelo</a></li>
                     <li><a href="../../views/cadastromonitor/monitor.php">Local</a></li>
@@ -60,6 +89,8 @@
 
                 </ul>
             </li>
+
+
 
 
 
@@ -137,3 +168,4 @@ echo "Olá, " . $_SESSION['usuarioNome'];?> <b class="caret"></b></a>
 
 
 </nav>
+
