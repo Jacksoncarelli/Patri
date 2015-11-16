@@ -114,21 +114,31 @@ require_once("../../topo.php");
                     </div>
                     <div class="col-md-10">
                         <label class="checkbox-inline">
+                        <input type="hidden" name="hdmi" value="0">
                             <input type="checkbox" name="hdmi" value="1"> HDMI
                         </label>
                         <label class="checkbox-inline">
+                        <input type="hidden" name="vga" value="0">
                             <input type="checkbox"  name="vga" value="1"> VGA
                         </label>
                         <label class="checkbox-inline">
+                        <input type="hidden"  name="dvi" value="0">
                             <input type="checkbox"  name="dvi" value="1"> DVI
                         </label>
                         <label class="checkbox-inline">
+                        <input type="hidden"  name="displayport" value="0">
                             <input type="checkbox" name="displayport" value="1"> Displayport
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="hidden"  name="autofalante" value="0">
                             <input type="checkbox" name="autofalante" value="1"> Auto Falante
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="hidden"  name="microfone" value="0">
                             <input type="checkbox" name="microfone" value="1"> Microfone
-                        </label><label class="checkbox-inline">
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="hidden"  name="webcam" value="0">
                             <input type="checkbox" name="webcam" value="1"> Webcam
 
                     </div>

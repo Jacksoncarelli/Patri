@@ -22,12 +22,8 @@ $paralela=$_POST["paralela"];
 $wifi=$_POST["wifi"];
 $port_serial=$_POST["port_serial"];
 
-
-//$patrimonio=$_POST['num_patrimonio'];
-
-$sql = "INSERT INTO impressora (id_local,id_user,id_status,id_fabrincante,id_modelo,num_serie,comentario,con_atual,num_patrimonio,wifi,usb,lan,paralela,port_serial)
-	VALUES ($local,$user,$status,$fabricante,$modelo,'$num_serie','$comentario',$contagem,$num_patrimonio,$wifi,$usb,$lan,$paralela,$port_serial)";
-
+$sql = "INSERT INTO impressora (id_local,id_status,id_fabricante,id_modelo,num_serie,comentario,con_atual,num_patrimonio,wifi,usb,lan,paralela,port_serial)
+	VALUES ($local,$status,$fabricante,$modelo,'$num_serie','$comentario',$contagem,$num_patrimonio,$wifi,$usb,$lan,$paralela,$port_serial)";
 
 if($db->query($sql)){
     
@@ -42,7 +38,11 @@ else{
 			" status: ".$status,
 			" comentario: ".$comentario,
 			" USER: ".$user,
-			" Wifi: ".$wifi;
+			" Wifi: ".$wifi,
+			" LAN: ".$lan,
+			" Porta serial: ".$port_serial,
+			" paralela: ".$paralela,
+			" usb: ".$usb;
 	;
 
  }	

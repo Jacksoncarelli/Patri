@@ -64,7 +64,7 @@ require_once("../../topo.php");
 
                 <?php
                 $dados_impressora = "SELECT * FROM impressora LEFT JOIN local ON impressora.id_local = local.id_local
-                                                      LEFT JOIN fabricante ON impressora.id_fabrincante = fabricante.id_fabricante
+                                                      LEFT JOIN fabricante ON impressora.id_fabricante = fabricante.id_fabricante
                                                       LEFT JOIN modelo ON impressora.id_modelo = modelo.id_modelo
                                                       LEFT JOIN status ON impressora.id_status = status.id_status";
 
@@ -78,11 +78,30 @@ require_once("../../topo.php");
                         echo '<td>' . $row["num_patrimonio"] . '</td>';
                         echo '<td>' . $row["num_serie"] . '</td>';
                         echo '<td>' . $row["con_atual"] . '</td>';
-                        echo '<td>' . $row["port_serial"] . '</td>';
-                        echo '<td>' . $row["usb"] . '</td>';
-                        echo '<td>' . $row["wifi"] . '</td>';
-                        echo '<td>' . $row["lan"] . '</td>';
-                        echo '<td>' . $row["paralela"] . '</td>';
+
+                        if ($row["port_serial"]){
+                            echo '<td>sim</td>';
+                        } else {
+                            echo '<td>não</td>';
+                        }
+                        if ($row["usb"]){
+                            echo '<td>sim</td>';
+                        } else {
+                            echo '<td>não</td>';
+                        }
+                        if ($row["wifi"]){
+                            echo '<td>sim</td>';
+                        } else {
+                            echo '<td>não</td>';
+                        }if ($row["lan"]){
+                            echo '<td>sim</td>';
+                        } else {
+                            echo '<td>não</td>';
+                        }if ($row["paralela"]){
+                            echo '<td>sim</td>';
+                        } else {
+                            echo '<td>não</td>';
+                        }
                         echo '<td>'. $row["nome_fabricante"].'</td>';
                         echo '<td>'. $row["modelo"].'</td>';
                         echo '<td>'. $row["sigla_local"].'</td>';

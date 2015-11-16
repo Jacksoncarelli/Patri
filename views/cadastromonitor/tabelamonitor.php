@@ -77,19 +77,16 @@ require_once("../../topo.php");
                              echo '<td>' . $row["modelo"] . '</td>';
                              echo '<td>' . $row["nome_fabricante"] . '</td>';
                              echo '<td>' . $row["nome_local"] . '</td>';
-            
 
-                             if ($row["hdmi"] == 1){
+                             if ($row["hdmi"]){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["hdmi"] = 0;
                                  echo '<td>não</td>';
 
                              }
-                             if ($row["vga"] == 1){
+                             if ($row["vga"]){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["vga"] = 0;
                                  echo '<td>não</td>';
 
                              }
@@ -97,35 +94,30 @@ require_once("../../topo.php");
                               if ($row["dvi"] == 1){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["dvi"] = 0;
-                                 echo '<td>não</td>';
+                                  echo '<td>não</td>';
 
                              }
                               if ($row["displayport"] == 1){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["displayport"] = 0;
-                                 echo '<td>não</td>';
+                                  echo '<td>não</td>';
 
                              }
                               if ($row["autofalante"] == 1){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["autofalante"] = 0;
-                                 echo '<td>não</td>';
+                                  echo '<td>não</td>';
 
                              }
                              if ($row["microfone"] == 1){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["microfone"] = 0;
                                  echo '<td>não</td>';
 
                              }
                              if ($row["webcam"] == 1){
                                  echo '<td>sim</td>';
                              } else {
-                                $row["webcam"] = 0;
                                  echo '<td>não</td>';
 
                              }
