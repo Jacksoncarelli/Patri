@@ -54,7 +54,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="number" name="num_patrimonio" />
+                        <input class="form-control" type="text" name="num_patrimonio" />
                     </div>
 
                     <div class="col-md-3">
@@ -151,7 +151,7 @@ require_once("../../topo.php");
                     </div>
                     <div class="col-md-4">
                         <label class="radio-inline">
-                            <input type="radio" name="status"  value="1"> Ativo
+                            <input type="radio" name="status"  value="1" checked="checked"> Ativo
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="status"  value="2"> Estoque

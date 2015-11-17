@@ -47,7 +47,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3 ">
                         <label>Sistema Operacional:</label>
-                        <select class="form-control" name=so>
+                        <select class="form-control" name=so required>
                             <option disabled selected>Selecione uma opção</option>
                             <?php
                             $sistemas=mysql_query("SELECT nome_so,id_so FROM sistema_operacional");
@@ -72,7 +72,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="number" name="num_patrimonio" onl/>
+                        <input class="form-control" type="text" name="num_patrimonio" onl/>
                     </div>
 
                     <div class="col-md-3">
@@ -131,7 +131,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Usuário responsável:</label>
-                        <input class="form-control" type="text" name="responsavel" />
+                        <input class="form-control" type="text" name="responsavel" required />
                     </div>
 
 
@@ -151,7 +151,7 @@ require_once("../../topo.php");
                     <div class="col-md-5">
 
                         <label class="radio-inline">
-                            <input type="radio" name="status" id="inlineRadio1" value="1"> Ativo
+                            <input type="radio" name="status" id="inlineRadio1" value="1" checked="checked"> Ativo
                         </label>
                         <label class="radio-inline">
                             <input type="radio" name="status" id="inlineRadio2" value="2"> Estoque

@@ -4,13 +4,14 @@ protegePagina(); // Chama a função que protege a página
 ?>
 <?php
 require_once ("../../conexao.php");
-$nome=$_POST["nome"];
+$modelo=$_POST["modelo"];
+$fabricante=$_POST["fabricante"];
 
-$sql = "INSERT INTO fabricante (nome_fabricante) VALUES ('$nome')";
+$sql = "INSERT INTO modelo (modelo,id_fabricante) VALUES ('$modelo',$fabricante)";
 
 if($db->query($sql)){
 
-    echo "<script>alert('Fabricante cadastrado com sucesso!');top.location.href='../../views/index/index.php';</script>";
+    echo "<script>alert('Modelo cadastrado com sucesso!');top.location.href='../../views/index/index.php';</script>";
 }
 else
 	{

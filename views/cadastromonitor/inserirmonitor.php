@@ -23,6 +23,8 @@ $microfone=$_POST["microfone"];
 $webcam=$_POST["webcam"];
 
 
+
+
 $sql = "INSERT INTO monitor (comentario,id_fabricante,id_local,id_modelo,id_status,id_user,hdmi,vga,dvi,autofalante,displayport,microfone,webcam)
 	VALUES ('$comentario',$fabricante,$local,$modelo,$status,$user,$hdmi,$vga,$dvi,$autofalante,$displayport,$microfone,$webcam)";
 

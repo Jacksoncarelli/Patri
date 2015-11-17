@@ -23,8 +23,10 @@
 </script>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
+
+    <!-- Modal FABRICANTE -->
+<form action="../../views/fabricante/inserirfabricante.php" method="POST">
+    <div class="modal fade" id="ModalFabricante" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -34,19 +36,142 @@
                     <h4 class="modal-title">Novo de Fabricante</h4>
                 </div>
                 <div class="modal-body">
-
+                
                         <label> Nome: </label>
                         <input class="form-control" height="100px" type="text" name="nome" required/>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
                 </div>
+                </form>
             </div>
 
         </div>
     </div>
+
+
+
+    <!-- Modal LOCAL -->
+<form action="../../views/local/inserirlocal.php" method="POST">
+    <div class="modal fade" id="ModalLocal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Novo local</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label> Nome: </label>
+                        <input class="form-control" height="100px" type="text" name="nome" required/>
+                        <label> Sigla: </label>
+                        <input class="form-control" height="100px" type="text" name="sigla" required/>
+                        <label> Número da sala: </label>
+                        <input class="form-control" height="100px" type="number" name="num_sala" required/>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+   <!-- Modal SO -->
+<form action="../../views/sistemaoperacional/inserirso.php" method="POST">
+    <div class="modal fade" id="ModalSo" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Novo Sistema Operacional</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label> Nome: </label>
+                        <input class="form-control" height="100px" type="text" name="nome" required/>
+                        <label>Fabricante:</label>
+                        <select class="form-control" name=fabricante required>
+                            <option disabled selected>Selecione uma opção</option>
+                            <?php
+                            $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
+                            while($tbl=mysql_fetch_array($sistemas)){
+                                $nome_sistemas=$tbl['nome_fabricante'];
+                                $id=$tbl['id_fabricante'];
+                                ?>
+                                <option value="<?php echo $id?>">
+                                    <?php echo $nome_sistemas ?></option>
+                            <?php } ?>
+                        </select>
+                     
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+   <!-- Modal Modelo -->
+<form action="../../views/modelo/inserirmodelo.php" method="POST">
+    <div class="modal fade" id="ModalModelo" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Novo Modelo</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label> Modelo: </label>
+                        <input class="form-control" height="100px" type="text" name="modelo" required/>
+                        <label>Fabricante:</label>
+                        <select class="form-control" name=fabricante required>
+                            <option disabled selected>Selecione uma opção</option>
+                            <?php
+                            $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
+                            while($tbl=mysql_fetch_array($sistemas)){
+                                $nome_sistemas=$tbl['nome_fabricante'];
+                                $id=$tbl['id_fabricante'];
+                                ?>
+                                <option value="<?php echo $id?>">
+                                    <?php echo $nome_sistemas ?></option>
+                            <?php } ?>
+                        </select>
+                     
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <nav class="navbar navbar-inverse navbar-static-top marginBottom-0" role="navigation">
@@ -57,7 +182,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="../../views/index/index.php" class="navbar-brand">SIS-Patrimoio</a>
+        <span class="glyphicon glyphicon-home"></span><a href="../../views/index/index.php" class="navbar-brand">SIS-Patrimoio</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -72,11 +197,11 @@
                             <li><a href="../../views/cadastroimpressora/impressora.php">Nova Impressora</a></li>
                             <li><a href="../../views/cadastromonitor/monitor.php">Novo Monitor</a></li>
                     <li class="divider"></li>
-                    <li ><a href="#" data-toggle="modal" data-target="#myModal">Fabricante</a>
+                    <li ><a href="#" data-toggle="modal" data-target="#ModalFabricante">Fabricante</a>
                     </li>
-                    <li><a href="../../views/cadastroimpressora/impressora.php">Modelo</a></li>
-                    <li><a href="../../views/cadastromonitor/monitor.php">Local</a></li>
-                    <li><a href="../../views/cadastroimpressora/impressora.php">Sistema Operacional</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalModelo">Modelo</a></li>
+                    <li><a  href="#" data-toggle="modal" data-target="#ModalLocal">Local</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#ModalSo">Sistema Operacional</a></li>
                         </ul>
                     </li>
 

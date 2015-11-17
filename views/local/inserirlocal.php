@@ -5,12 +5,14 @@ protegePagina(); // Chama a função que protege a página
 <?php
 require_once ("../../conexao.php");
 $nome=$_POST["nome"];
+$sigla=$_POST["sigla"];
+$num_sala=$_POST["num_sala"];
 
-$sql = "INSERT INTO fabricante (nome_fabricante) VALUES ('$nome')";
+$sql = "INSERT INTO local (nome_local,sigla_local,num_sala) VALUES ('$nome','$sigla','$num_sala')";
 
 if($db->query($sql)){
 
-    echo "<script>alert('Fabricante cadastrado com sucesso!');top.location.href='../../views/index/index.php';</script>";
+    echo "<script>alert('Local cadastrado com sucesso!');top.location.href='../../views/index/index.php';</script>";
 }
 else
 	{
