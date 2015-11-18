@@ -4,8 +4,8 @@ protegePagina(); // Chama a função que protege a página
 ?>
 <?php
 require_once ("../../conexao.php");
-$id=$_POST["id_monitor"];
-$pegaid = (int) $_POST['id_monitor'];
+$id=$_GET["id_monitor"];
+$pegaid = (int) $_GET['id_monitor'];
 
 $sql = "DELETE FROM monitor WHERE id_monitor=$pegaid";
 

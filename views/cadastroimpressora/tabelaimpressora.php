@@ -42,6 +42,7 @@ require_once("../../topo.php");
                     <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Nome</th>
                     <th>Patrimonio</th>
                     <th>Série</th>
                     <th>Contagem Atual</th>
@@ -62,6 +63,7 @@ require_once("../../topo.php");
 
 
 
+
                 <?php
                 $dados_impressora = "SELECT * FROM impressora LEFT JOIN local ON impressora.id_local = local.id_local
                                                       LEFT JOIN fabricante ON impressora.id_fabricante = fabricante.id_fabricante
@@ -75,43 +77,61 @@ require_once("../../topo.php");
                     while ($row =$resultadoimpressora->fetch_assoc())  {
                         $dados_nome_so = "SELECT nome_so FROM sistema_operacional";
                         echo '  <tr><td>' . $row["id_impressora"] . '</td>';
+                        echo '  <td>' . $row["nome_impressora"] . '</td>';
+
+                         if(empty($row["num_patrimonio"]))
+                                $row["num_patrimonio"]='Não possui';
                         echo '<td>' . $row["num_patrimonio"] . '</td>';
+
+                        if(empty($row["num_serie"]))
+                                $row["num_serie"]='Não possui';
                         echo '<td>' . $row["num_serie"] . '</td>';
+
                         echo '<td>' . $row["con_atual"] . '</td>';
 
                         if ($row["port_serial"]){
-                            echo '<td>sim</td>';
+                            echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                         } else {
-                            echo '<td>não</td>';
+                            echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
                         }
                         if ($row["usb"]){
-                            echo '<td>sim</td>';
+                            echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                         } else {
-                            echo '<td>não</td>';
+                            echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
                         }
                         if ($row["wifi"]){
-                            echo '<td>sim</td>';
+                            echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                         } else {
-                            echo '<td>não</td>';
+                            echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
                         }if ($row["lan"]){
-                            echo '<td>sim</td>';
+                            echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                         } else {
-                            echo '<td>não</td>';
+                            echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
                         }if ($row["paralela"]){
-                            echo '<td>sim</td>';
+                            echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                         } else {
-                            echo '<td>não</td>';
+                            echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
                         }
                         echo '<td>'. $row["nome_fabricante"].'</td>';
                         echo '<td>'. $row["modelo"].'</td>';
                         echo '<td>'. $row["sigla_local"].'</td>';
+
+                         if(empty($row["comentario"]))
+                                $row["comentario"]='Não possui';
                         echo '<td>' . $row["comentario"] . '</td>';
+
                         echo '<td>'. $row["nome_status"].'</td>';
 
 
                          echo '<td align="center">
                         
     <form  action="editarimpressora.php" method="GET">
+    <input class="btn btn-success btn-sm" type="hidden"   name="port_serial" id='.$row["port_serial"].' value="'.$row["port_serial"].'"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="usb" id='.$row["usb"].' value="'.$row["usb"]. '"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="paralela" id='.$row["paralela"].' value="'.$row["paralela"]. '"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="wifi" id= '.$row["wifi"]. ' value=" '.$row["wifi"]. '"/>
+          <input class="btn btn-success btn-sm" type="hidden"   name="lan" id= '.$row["lan"]. ' value=" '.$row["lan"]. '"/>
+
   <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id='.$row["id_status"].' value='.$row["id_status"].'>
 <button class="btn btn-success btn-sm" type="submit"  name="id_impressora" id='.$row["id_impressora"].' value='.$row["id_impressora"].'>Editar</button>
 

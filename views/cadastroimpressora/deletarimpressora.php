@@ -13,21 +13,11 @@ $sql = "DELETE FROM impressora WHERE id_impressora=$pegaid";
 
 if($db->query($sql)){
 
-    echo "<script>alert('Impressora deletada com sucesso!');top.location.href='tabelaimpressora.php';</script>";
+    echo "<script>top.location.href='tabelaimpressora.php';</script>";
 }
 else
 {
-    echo " nome: ".$nome,
-        " serial: ".$serial_so,
-        " numero serie: ".$num_serie,
-        " fabricante: ".$fabricante,
-        " local: ".$local,
-        " sistema operacional: ".$so,
-        " responsavel: ".$responsavel,
-        " modelo: ".$modelo,
-        " status: ".$status,
-        " comentario: ".$comentario,
-        " USER: ".$user,
+    echo 
         " ID: ".$id;
 }
 mysqli_close($db);

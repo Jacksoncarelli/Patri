@@ -52,26 +52,7 @@ require_once("../../topo.php");
                         </select>
                     </div>
 
-                    <div class="col-md-3">
-                        <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="text" name="num_patrimonio" />
-                    </div>
-
-                    <div class="col-md-3">
-                        <label>Fabricante:</label>
-                        <select class="form-control" name=fabricante required>
-                            <option disabled selected>Selecione uma opção</option>
-                            <?php
-                            $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
-                            while($tbl=mysql_fetch_array($sistemas)){
-                                $nome_sistemas=$tbl['nome_fabricante'];
-                                $id=$tbl['id_fabricante'];
-                                ?>
-                                <option value="<?php echo $id?>">
-                                    <?php echo $nome_sistemas ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
+                    
 
                     <div class="col-md-3">
                         <label>Modelo:</label>
@@ -91,14 +72,43 @@ require_once("../../topo.php");
                         </select>
                     </div>
 
+                    <div class="col-md-3">
+                        <label>Fabricante:</label>
+                        <select class="form-control" name=fabricante required>
+                            <option disabled selected>Selecione uma opção</option>
+                            <?php
+                            $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
+                            while($tbl=mysql_fetch_array($sistemas)){
+                                $nome_sistemas=$tbl['nome_fabricante'];
+                                $id=$tbl['id_fabricante'];
+                                ?>
+                                <option value="<?php echo $id?>">
+                                    <?php echo $nome_sistemas ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+
+<div class="col-md-3">
+                        <label>Tamanho:</label>
+                        <input class="form-control"  type="number" name="tamanho" required/></input>
+                    </div>
+
 
 <div class="col-md-12">
     <br>
 </div>
-                    <div class="col-md-3">
-                        <label>Tamanho:</label>
-                        <input class="form-control"  type="number" name="tamanho"/></input>
+
+<div class="col-md-3">
+                        <label>Numero de Patrimônio:</label>
+                        <input class="form-control" type="text" name="num_patrimonio" />
                     </div>
+
+<div class="col-md-3">
+                        <label>Numero de série:</label>
+                        <input class="form-control" type="text" name="num_serie" />
+                    </div>
+
+                    
 
 
                     <div class="col-md-3">

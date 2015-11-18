@@ -32,6 +32,15 @@ require_once("../../topo.php");
 
                 <form  class="form-horizontal" action="inseririmpressora.php " method="post">
 
+
+ <div class="col-md-3">
+                        <label> Nome: </label>
+                        <a data-toggle="popover" data-trigger="hover" data-content="Informe corretamente o nome deste computador">?</a>
+
+                        <input class="form-control" type="text" name="nome" required/>
+                    </div>
+
+                    
                     <div class="col-md-3">
                         <label>local:</label>
                         <select class="form-control" name=local required>
@@ -88,17 +97,17 @@ require_once("../../topo.php");
 
 
 
-                    <div class="col-md-3">
-                        <label>Contagem atual:</label>
-                        <input class="form-control" type="number" name="contagem_atual" />
-                    </div>
+                   
 
 
 
                     <div class="col-md-12">
                         <br>
                     </div>
-
+ <div class="col-md-3">
+                        <label>Contagem atual:</label>
+                        <input class="form-control" type="number" name="contagem_atual" />
+                    </div>
 
                     <div class="col-md-3">
                         <label >Numero de Patrimônio:</label>

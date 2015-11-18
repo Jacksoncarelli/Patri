@@ -75,14 +75,29 @@ require_once("../../topo.php");
                        // var_dump($resultadopc->fetch_assoc());
                         echo '  <tr><td>' . $row["id_computador"] . '</td>';
                         echo '<td>' . $row["nome"] . '</td>';
+
+                                if(empty($row["num_patrimonio"]))
+                                $row["num_patrimonio"]='Não possui';
                         echo '<td>' . $row["num_patrimonio"] . '</td>';
+
+                        if(empty($row["num_serie"]))
+                                $row["num_serie"]='Não possui';
                         echo '<td>' . $row["num_serie"] . '</td>';
+
                         echo '<td>' . $row["nome_so"] . '</td>';
+
+                        if(empty($row["serial_so"]))
+                                $row["serial_so"]='Não possui';
                         echo '<td>'. $row["serial_so"].'</td>';
+
                         echo '<td>'. $row["nome_fabricante"].'</td>';
                         echo '<td>'. $row["modelo"].'</td>';
                         echo '<td>'. $row["sigla_local"].'</td>';
+
+                        if(empty($row["comentario"]))
+                                $row["comentario"]='Não possui';
                         echo '<td>' . $row["comentario"] . '</td>';
+                        
                         echo '<td>'. $row["nome_status"].'</td>';
 
                         echo '<td align="center">

@@ -75,49 +75,50 @@ require_once("../../topo.php");
                              echo '<td>' . $row["nome_local"] . '</td>';
 
                              if ($row["hdmi"]){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                 echo '<td>não</td>';
+                                 echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
                              if ($row["vga"]){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                 echo '<td>não</td>';
+                                 echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
 
                               if ($row["dvi"] == 1){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                  echo '<td>não</td>';
+                                  echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
                               if ($row["displayport"] == 1){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                  echo '<td>não</td>';
+                                  echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
                               if ($row["autofalante"] == 1){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                  echo '<td>não</td>';
+                                  echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
                              if ($row["microfone"] == 1){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                 echo '<td>não</td>';
+                                 echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
                              if ($row["webcam"] == 1){
-                                 echo '<td>sim</td>';
+                                 echo '<td><span class="glyphicon glyphicon-ok"></span></td>';
                              } else {
-                                 echo '<td>não</td>';
+                                 echo '<td><span class="glyphicon glyphicon-remove"></span></td>';
 
                              }
-
+                             if(empty($row["comentario"]))
+                                $row["comentario"]='Não possui';
                              echo '<td>' . $row["comentario"] . '</td>';
                              echo '<td>' . $row["nome_status"] . '</td>';
 

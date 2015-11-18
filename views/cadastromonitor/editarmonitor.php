@@ -221,11 +221,34 @@ $row = $dados_monitor->fetch_assoc();
 
 </div>
 
-    <form action="deletarmonitor.php " method="POST">
-    <div class="col-md-1  "
+    <div class="col-md-1">
+    <form  class="form-horizontal" action="deletarmonitor.php " method="GET">
+      <!-- Modal LOCAL -->
+    <div class="modal fade" id="ModalExcluir" role="dialog">
+        <div class="modal-dialog">
 
-    <br><button class="btn btn-danger excluir" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"  ><span  class="glyphicon glyphicon-trash"></span></button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmar exclusão</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label>Deseja mesmo deletar este Monitor?</label>
+                </div>
+                <div class="modal-footer">
+                    <button title="Deletar computador" class="btn btn-danger" type="submit"  name="id_monitor"   value='<?php echo $_GET['id_monitor'] ?>'>Excluir</button>
+    
+                </div>
+                </form>
+            </div>
+
         </div>
+    </div>
+        <button class="btn btn-danger excluir" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>' data-toggle="modal" data-target="#ModalExcluir"> <span  class="glyphicon glyphicon-trash"></span></button>
+         </div>
+
 </form>
 
 

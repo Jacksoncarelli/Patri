@@ -20,22 +20,22 @@ require_once ("../../conexao.php");
 $id = $_GET['id_impressora'];
 $id_status=$_GET['id_status'];
 
-$hdmi = $_GET['hdmi'];
-$dvi=$_GET['dvi'];
-$vga = $_GET['vga'];
-$displayport=$_GET['displayport'];
-$microfone = $_GET['microfone'];
-$autofalante=$_GET['autofalante'];
-$webcam = $_GET['webcam'];
-
-$sql = "SELECT * FROM monitor LEFT JOIN local ON monitor.id_local = local.id_local
-                                                             LEFT JOIN modelo ON monitor.id_modelo = modelo.id_modelo
-                                                             LEFT JOIN fabricante ON monitor.id_fabricante = fabricante.id_fabricante
-                                                             LEFT JOIN status ON monitor.id_status = status.id_status WHERE id_monitor= $id" ;
+$usb=$_GET['usb'];
+$paralela=$_GET['paralela'];
+$wifi=$_GET['wifi'];
+$lan=$_GET['lan'];
+$port_serial=$_GET['port_serial'];
 
 
-$dados_monitor = mysqli_query($db, $sql);
-$row = $dados_monitor->fetch_assoc();
+
+
+$sql = "SELECT * FROM impressora LEFT JOIN local ON impressora.id_local = local.id_local
+                                                             LEFT JOIN modelo ON impressora.id_modelo = modelo.id_modelo
+                                                             LEFT JOIN fabricante ON impressora.id_fabricante = fabricante.id_fabricante
+                                                             LEFT JOIN status ON impressora.id_status = status.id_status WHERE id_impressora= $id" ;
+
+$dados_impressora = mysqli_query($db, $sql);
+$row = $dados_impressora->fetch_assoc();
 ?>
 
 <body>
@@ -52,6 +52,13 @@ $row = $dados_monitor->fetch_assoc();
 
                 <form  class="form-horizontal" action="salvarimpressora.php " method="GET">
 
+
+                    <div class="col-md-3">
+                        <label> Nome: </label>
+                        <a data-toggle="popover" data-trigger="hover" data-content="Informe corretamente o nome deste computador">?</a>
+
+                        <input class="form-control" type="text" name="nome" value="<?php echo $row['nome_impressora']?>" required/>
+                    </div>
 
 
                     <div class="col-md-3">
@@ -106,19 +113,21 @@ $row = $dados_monitor->fetch_assoc();
 
 
 
-                    <div class="col-md-3">
-                        <label>Contagem atual:</label>
-                        <input class="form-control" type="number" name="contagem_atual" value="<?php echo $row['con_atual']?>"/>
-                    </div>
 
 <div class="col-md-12">
     <br>
 </div>
 
 
+
+                    <div class="col-md-3">
+                        <label>Contagem atual:</label>
+                        <input class="form-control" type="number" name="contagem_atual" value="<?php echo $row['con_atual']?>"/>
+                    </div>
+
                     <div class="col-md-3">
                         <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="number" name="num_patrimonio" />
+                        <input class="form-control" type="number" name="num_patrimonio" value="<?php echo $row['num_patrimonio']?>" />
                     </div>
                     <div class="col-md-3">
                         <label>Numero de série:</label>
@@ -141,23 +150,26 @@ $row = $dados_monitor->fetch_assoc();
                         <label>Possui: </label>
                     </div>
                     <div class="col-md-10">
+
+
                         <label class="checkbox-inline">
-                            <input type="checkbox" name="hdmi" <?php if ($hdmi==1){ echo "checked='checked'";} ?> value="1"> HDMI
+                            <input type="hidden" name="port_serial" value="0">
+                            <input type="checkbox" name="port_serial" <?php if ($port_serial==1){ echo "checked='checked'";} ?>  value="1"> Porta serial
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox"  name="vga" <?php if ($vga==1){ echo "checked='checked'";} ?> value="1"> VGA
+                            <input type="hidden" name="usb" value="0">
+                            <input type="checkbox"  name="usb" <?php if ($usb==1){ echo "checked='checked'";} ?> value="1"> Usb
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox"  name="dvi" <?php if ($dvi==1){ echo "checked='checked'";} ?> value="1"> DVI
+                            <input type="checkbox"  name="paralela" <?php if ($paralela==1){ echo "checked='checked'";} ?> value="1"> Paralela
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" name="displayport" <?php if ($displayport==1){ echo "checked='checked'";} ?> value="1"> Displayport
+                            <input type="checkbox"  name="wifi" <?php if ($wifi==1){ echo "checked='checked'";} ?>  value="1"> Wifi
                         </label><label class="checkbox-inline">
-                            <input type="checkbox" name="autofalante" <?php if ($autofalante==1){ echo "checked='checked'";} ?> value="1"> Auto Falante
-                        </label><label class="checkbox-inline">
-                            <input type="checkbox" name="microfone" <?php if ($microfone==1){ echo "checked='checked'";} ?> value="1"> Microfone
-                        </label><label class="checkbox-inline">
-                            <input type="checkbox" name="webcam" <?php if ($webcam==1){ echo "checked='checked'";} ?> value="1"> Webcam
+                            <input type="checkbox"  name="lan" <?php if ($lan==1){ echo "checked='checked'";} ?>  value="1"> Lan
+
+
+
 
                     </div>
 
@@ -199,23 +211,50 @@ $row = $dados_monitor->fetch_assoc();
 </div>
 <div class="col-md-10">
 
-    <input class="btn btn-success btn-sm" type="hidden"   name="hdmi" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="dvi" id="<?php echo $dvi ?>" value="<?php echo $dvi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="vga" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="displayport" id="<?php echo $displayport ?>" value="<?php echo $displayport ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="autofalante" id="<?php echo $autofalante ?>" value="<?php echo $autofalante ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="microfone" id="<?php echo $microfone ?>" value="<?php echo $microfone ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"  name="webcam" id="<?php echo $webcam ?>" value="<?php echo $webcam ?>">
-    <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id="<?php echo $id_status ?>" value="<?php echo $id_status?>">
+    <input class="btn btn-success btn-sm" type="hidden"   name="port_serial" id="<?php echo $port_serial ?>" value="<?php echo $port_serial ?>"/>
+    <input class="btn btn-success btn-sm" type="hidden"   name="usb" id="<?php echo $usb ?>" value="<?php echo $usb ?>"/>
+    <input class="btn btn-success btn-sm" type="hidden"   name="paralela" id="<?php echo $paralela ?>" value="<?php echo $paralela ?>"/>
+    <input class="btn btn-success btn-sm" type="hidden"   name="wifi" id="<?php echo $wifi ?>" value="<?php echo $wifi ?>"/>
+    <input class="btn btn-success btn-sm" type="hidden"   name="lan" id="<?php echo $lan ?>" value="<?php echo $lan ?>"/>
 
+    <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id="<?php echo $id_status ?>" value="<?php echo $id_status?>">
     <button class="btn btn-success" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>'>ATUALIZAR</button>
     </form>
 
 </div>
-<form  class="form-horizontal" action="deletarimpressora.php " method="GET">
-    <div class="col-md-1"
-    <br><button class="btn btn-danger excluir" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"><span  class="glyphicon glyphicon-trash"></span></button>
+
+    
+
+
+<div class="col-md-1">
+    <form  class="form-horizontal" action="deletarimpressora.php " method="GET">
+      <!-- Modal LOCAL -->
+    <div class="modal fade" id="ModalExcluir" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmar exclusão</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label>Deseja mesmo deletar este Impressora?</label>
+                </div>
+                <div class="modal-footer">
+                    <button title="Deletar computador" class="btn btn-danger" type="submit"  name="id_impressora"   value='<?php echo $_GET['id_impressora'] ?>'>Excluir</button>
+    
+                </div>
+                </form>
+            </div>
+
+        </div>
     </div>
+        <button class="btn btn-danger excluir" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>' data-toggle="modal" data-target="#ModalExcluir"> <span  class="glyphicon glyphicon-trash"></span></button>
+         </div>
+
+</div>
 
 
 </form>

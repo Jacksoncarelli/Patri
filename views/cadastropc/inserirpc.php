@@ -18,18 +18,19 @@ $user=$_SESSION['usuarioID'];
 $patrimonio=$_POST['num_patrimonio'];
 
 if(empty($serial_so))
-	$serial_so='NULL';
+	$serial_so=NULL;
 
 if(empty($num_serie))
-	$num_serie='NULL';
+	$num_serie=NULL;
 
 if(empty($comentario))
-	$comentario='NULL';
+	$comentario=NULL;
+
 if(empty($patrimonio))
-	$patrimonio='NULL';
+	$patrimonio=NULL;
 
 $sql = "INSERT INTO computador (nome,serial_so,num_serie,comentario,id_fabricante,id_local,id_so,id_modelo,id_status,id_user,num_patrimonio)
-	VALUES ('$nome','$serial_so','$num_serie','$comentario',$fabricante,$local,$so,$modelo,$status,$user,$patrimonio)";
+	VALUES ('$nome','$serial_so','$num_serie','$comentario',$fabricante,$local,$so,$modelo,$status,$user,'$patrimonio')";
 
 if($db->query($sql)){
 

@@ -206,7 +206,30 @@ $row = $dados_pc->fetch_assoc();
 
 <div class="col-md-1">
     <form  class="form-horizontal" action="deletarpc.php " method="GET">
-        <button title="Deletar computador" class="btn btn-danger excluir" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>' onclick="return confirm('Tem certeza de que deseja excluir?');"><span  class="glyphicon glyphicon-trash"></span></button>
+      <!-- Modal LOCAL -->
+    <div class="modal fade" id="ModalExcluir" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmar exclusão</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label>Deseja mesmo deletar este Computador?</label>
+                </div>
+                <div class="modal-footer">
+                    <button title="Deletar computador" class="btn btn-danger" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>'>Excluir</button>
+    
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+        <button title="Deletar computador" class="btn btn-danger" type="submit"  name="id_pc"  value='<?php echo $_GET['id_pc'] ?>' data-toggle="modal" data-target="#ModalExcluir"><span  class="glyphicon glyphicon-trash"></span></button>
     </div>
 
     </form>

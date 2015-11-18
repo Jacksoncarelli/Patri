@@ -23,10 +23,19 @@ $microfone=$_POST["microfone"];
 $webcam=$_POST["webcam"];
 
 
+if(empty($num_serie))
+	$num_serie=NULL;
+
+if(empty($comentario))
+	$comentario=NULL;
+
+if(empty($patrimonio))
+	$patrimonio=NULL;
 
 
-$sql = "INSERT INTO monitor (comentario,id_fabricante,id_local,id_modelo,id_status,id_user,hdmi,vga,dvi,autofalante,displayport,microfone,webcam)
-	VALUES ('$comentario',$fabricante,$local,$modelo,$status,$user,$hdmi,$vga,$dvi,$autofalante,$displayport,$microfone,$webcam)";
+
+$sql = "INSERT INTO monitor (comentario,id_fabricante,id_local,id_modelo,id_status,id_user,hdmi,vga,dvi,autofalante,displayport,microfone,webcam,num_patrimonio,num_serie)
+	VALUES ('$comentario',$fabricante,$local,$modelo,$status,$user,$hdmi,$vga,$dvi,$autofalante,$displayport,$microfone,$webcam,'$patrimonio','$num_serie')";
 
 if($db->query($sql)){
 
@@ -34,7 +43,7 @@ if($db->query($sql)){
 }
 else
 	{
-		echo 
+		echo $sql,
 			" fabricante: ".$fabricante,
 			" local: ".$local,
 			" responsavel: ".$responsavel,
