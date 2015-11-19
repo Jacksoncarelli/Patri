@@ -164,6 +164,47 @@
 
 
 
+<!-- Modal Modelo -->
+<form action="../../views/usuarios/inserirusuario.php" method="POST">
+    <div class="modal fade" id="ModalUsuario" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Novo Usuário</h4>
+                </div>
+                <div class="modal-body">
+                
+                        <label> Nome: </label>
+                        <input class="form-control" height="100px" type="text" name="nome" required/>
+
+                        <label> Usuário: </label>
+                        <input class="form-control" height="100px" type="text" name="usuario" />
+
+                        <label> Senha: </label>
+                        <input class="form-control" height="100px" type="password" name="senha" required/>
+
+                        <label>Nivel: (<a title="Nivel 1: , Nivel 2: , Nivel 3: ">?</a>)</label>
+                        <select class="form-control" name=fabricante required>
+                            <option  selected>Escolha o nivel</option>
+                            <option  >Nivel 1</option>
+                            <option  >Nivel 2</option>
+                            <option  >Nivel 3</option>
+                        </select>
+                     
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
 
 
 
@@ -187,6 +228,14 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
+
+<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Admin <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target="#ModalUsuario">Novo Usuário</a></li>
+                    <li ><a href="../../views/usuarios/tabelausuario.php">Usuários Cadastrados</a>
+                            </li>
+                </ul>
+            </li>
 
 
             <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>

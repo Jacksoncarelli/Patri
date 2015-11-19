@@ -20,12 +20,13 @@ require_once ("../../conexao.php");
 $id = $_GET['id_impressora'];
 $id_status=$_GET['id_status'];
 
-$usb=$_GET['usb'];
-$paralela=$_GET['paralela'];
-$wifi=$_GET['wifi'];
-$lan=$_GET['lan'];
-$port_serial=$_GET['port_serial'];
 
+
+$port_serial = $_GET['port_serial'];
+$wifi=$_GET['wifi'];
+$paralela = $_GET['paralela'];
+$lan=$_GET['lan'];
+$usb=$_GET['usb'];
 
 
 
@@ -161,11 +162,14 @@ $row = $dados_impressora->fetch_assoc();
                             <input type="checkbox"  name="usb" <?php if ($usb==1){ echo "checked='checked'";} ?> value="1"> Usb
                         </label>
                         <label class="checkbox-inline">
+                        <input type="hidden" name="paralela" value="0">
                             <input type="checkbox"  name="paralela" <?php if ($paralela==1){ echo "checked='checked'";} ?> value="1"> Paralela
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="wifi" value="0">
                             <input type="checkbox"  name="wifi" <?php if ($wifi==1){ echo "checked='checked'";} ?>  value="1"> Wifi
                         </label><label class="checkbox-inline">
+                         <input type="hidden" name="lan" value="0">
                             <input type="checkbox"  name="lan" <?php if ($lan==1){ echo "checked='checked'";} ?>  value="1"> Lan
 
 
@@ -211,11 +215,7 @@ $row = $dados_impressora->fetch_assoc();
 </div>
 <div class="col-md-10">
 
-    <input class="btn btn-success btn-sm" type="hidden"   name="port_serial" id="<?php echo $port_serial ?>" value="<?php echo $port_serial ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="usb" id="<?php echo $usb ?>" value="<?php echo $usb ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="paralela" id="<?php echo $paralela ?>" value="<?php echo $paralela ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="wifi" id="<?php echo $wifi ?>" value="<?php echo $wifi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="lan" id="<?php echo $lan ?>" value="<?php echo $lan ?>"/>
+    
 
     <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id="<?php echo $id_status ?>" value="<?php echo $id_status?>">
     <button class="btn btn-success" type="submit"  name="id_impressora"  value='<?php echo $_GET['id_impressora'] ?>'>ATUALIZAR</button>

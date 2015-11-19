@@ -132,25 +132,32 @@ $row = $dados_monitor->fetch_assoc();
                     </div>
                     <div class="col-md-10">
                         <label class="checkbox-inline">
+                         <input type="hidden" name="hdmi" value="0">
                             <input type="checkbox" name="hdmi" <?php if ($hdmi==1){ echo "checked='checked'";} ?> value="1"> HDMI
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="vga" value="0">
                             <input type="checkbox"  name="vga" <?php if ($vga==1){ echo "checked='checked'";} ?> value="1"> VGA
                         </label>
 
                         <label class="checkbox-inline">
+                         <input type="hidden" name="dvi" value="0">
                             <input type="checkbox"  name="dvi" <?php if ($dvi==1){ echo "checked='checked'";} ?> value="1"> DVI
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="displayport" value="0">
                             <input type="checkbox" name="displayport" <?php if ($displayport==1){ echo "checked='checked'";} ?> value="1"> Displayport
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="autofalante" value="0">
                             <input type="checkbox" name="autofalante" <?php if ($autofalante==1){ echo "checked='checked'";} ?> value="1"> Auto Falante
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="microfone" value="0">
                             <input type="checkbox" name="microfone" <?php if ($microfone==1){ echo "checked='checked'";} ?> value="1"> Microfone
                         </label>
                         <label class="checkbox-inline">
+                         <input type="hidden" name="webcam" value="0">
                             <input type="checkbox" name="webcam" <?php if ($webcam==1){ echo "checked='checked'";} ?> value="1"> Webcam
 
                     </div>
@@ -206,15 +213,6 @@ $row = $dados_monitor->fetch_assoc();
 
 </div>
 <div class="col-md-10">
-
-    <input class="btn btn-success btn-sm" type="hidden"   name="hdmi" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="dvi" id="<?php echo $dvi ?>" value="<?php echo $dvi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="vga" id="<?php echo $hdmi ?>" value="<?php echo $hdmi ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="displayport" id="<?php echo $displayport ?>" value="<?php echo $displayport ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="autofalante" id="<?php echo $autofalante ?>" value="<?php echo $autofalante ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"   name="microfone" id="<?php echo $microfone ?>" value="<?php echo $microfone ?>"/>
-    <input class="btn btn-success btn-sm" type="hidden"  name="webcam" id="<?php echo $webcam ?>" value="<?php echo $webcam ?>">
-    <input class="btn btn-success btn-sm" type="hidden"  name="id_status" id="<?php echo $id_status ?>" value="<?php echo $id_status?>">
 
     <button class="btn btn-success" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>'>ATUALIZAR</button>
     </form>
