@@ -19,8 +19,8 @@ require_once("../../topo.php");
 
 
 
-
-<br>
+<div id="wrap">
+<div class="container">
 <div class="col-xs-12">
     <div class="panel">
 
@@ -35,7 +35,7 @@ require_once("../../topo.php");
 
  <div class="col-md-3">
                         <label> Nome: </label>
-                        <a data-toggle="popover" data-trigger="hover" data-content="Informe corretamente o nome deste computador">?</a>
+                        (<a title="Informe o nome desta impressora">?</a>)
 
                         <input class="form-control" type="text" name="nome" required/>
                     </div>
@@ -62,7 +62,7 @@ require_once("../../topo.php");
                     <div class="col-md-3">
                         <label>Fabricante:</label>
                         <!--                        onchange="getFabricante()"-->
-                        <select class="form-control" name=fabricante id="fabricante-list"  >
+                        <select class="form-control" name=fabricante id="fabricante-list" required >
                             <option >Selecione uma opção</option>
 
                             <?php
@@ -81,7 +81,7 @@ require_once("../../topo.php");
 
                     <div class="col-md-3">
                         <label>Modelo:</label>
-                        <select class="form-control" name=modelo id="modelo-list" >
+                        <select class="form-control" name=modelo id="modelo-list" required>
                             <option >Selecione uma opção</option>
                             <?php
                             $sistemas=mysql_query("SELECT modelo,id_modelo FROM modelo");
@@ -159,10 +159,10 @@ require_once("../../topo.php");
                         <br>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <label>Status:</label>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-5">
                         <label class="radio-inline">
                             <input type="radio" name="status"  value="1" checked="checked"> Ativo
                         </label>
@@ -208,12 +208,13 @@ require_once("../../topo.php");
 
 
 </script>
-</body>
-<script src="../../css/bootstrap/js/validaform.js"></script>
-
+</div></div>
 <?php
 require_once("../../footer.php")
 ?>
+</body>
+<script src="../../css/bootstrap/js/validaform.js"></script>
+
 
 
 

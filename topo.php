@@ -97,7 +97,7 @@
                         <label> Nome: </label>
                         <input class="form-control" height="100px" type="text" name="nome" required/>
                         <label>Fabricante:</label>
-                        <select class="form-control" name=fabricante required>
+                        <select class="form-control" name=fabricante >
                             <option disabled selected>Selecione uma opção</option>
                             <?php
                             $sistemas=mysql_query("SELECT nome_fabricante,id_fabricante FROM fabricante");
@@ -164,8 +164,8 @@
 
 
 
-<!-- Modal Modelo -->
-<form action="../../views/usuarios/inserirusuario.php" method="POST">
+<!-- Modal Usuario -->
+<form action="../../views/cadastrouser/inserirusuario.php" method="POST">
     <div class="modal fade" id="ModalUsuario" role="dialog">
         <div class="modal-dialog">
 
@@ -178,20 +178,20 @@
                 <div class="modal-body">
                 
                         <label> Nome: </label>
-                        <input class="form-control" height="100px" type="text" name="nome" required/>
+                        <input class="form-control" height="100px" type="text" name="nome" />
 
                         <label> Usuário: </label>
-                        <input class="form-control" height="100px" type="text" name="usuario" />
+                        <input class="form-control" height="100px" type="text" name="usuario" required />
 
                         <label> Senha: </label>
                         <input class="form-control" height="100px" type="password" name="senha" required/>
 
                         <label>Nivel: (<a title="Nivel 1: , Nivel 2: , Nivel 3: ">?</a>)</label>
-                        <select class="form-control" name=fabricante required>
-                            <option  selected>Escolha o nivel</option>
-                            <option  >Nivel 1</option>
-                            <option  >Nivel 2</option>
-                            <option  >Nivel 3</option>
+                        <select class="form-control" name="nivel" required>
+                            <option  disabled selected>Escolha o nivel</option>
+                            <option value="1" >Nivel 1</option>
+                            <option  value="2" >Nivel 2</option>
+                            <option value="3" >Nivel 3</option>
                         </select>
                      
                 </div>
@@ -229,14 +229,17 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Admin <b class="caret"></b></a>
+<?php if ($_SESSION['usuarioNivel'] == 3){
+echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Admin <b class="caret"></b></a>
                  <ul class="dropdown-menu">
                     <li><a href="#" data-toggle="modal" data-target="#ModalUsuario">Novo Usuário</a></li>
-                    <li ><a href="../../views/usuarios/tabelausuario.php">Usuários Cadastrados</a>
+                    <li ><a href="../../views/cadastrouser/tabelausuario.php">Usuários Cadastrados</a>
                             </li>
                 </ul>
-            </li>
+            </li>';
 
+}
+?>
 
             <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -331,8 +334,8 @@
 
 <ul class="nav navbar-nav navbar-right" style="padding-right: 15px">
                     <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><?php
-echo "Olá, " . $_SESSION['usuarioNome'];?> <b class="caret"></b></a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <?php echo "Olá, " . $_SESSION['usuarioNome'] ; ?> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="../../login/logout.php">Sair</a></li>
                         </ul>

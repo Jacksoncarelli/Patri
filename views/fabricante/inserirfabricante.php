@@ -14,20 +14,7 @@ if($db->query($sql)){
 }
 else
 	{
-		echo "$sql ",
-		'<br>'.
-		'<br>'.
-				" nome: ".$nome,
-			" serial: ".$serial_so,
-			" numero serie: ".$num_serie,
-			" fabricante: ".$fabricante,
-			" local: ".$local,
-			" sistema operacional: ".$so,
-			" responsavel: ".$responsavel,
-			" modelo: ".$modelo,
-			" status: ".$status,
-			" comentario: ".$comentario,
-			" USER: ".$user;
+		echo "<script>alert('Fabricante ja existe!');top.location.href='../../views/index/index.php';</script>";
  }	
   mysqli_close($db);
 ?>	

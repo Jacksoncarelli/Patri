@@ -38,7 +38,9 @@ $row = $dados_monitor->fetch_assoc();
 ?>
 <body>
 
-<br>
+<div id="wrap">
+
+<div class="container">
 <div class="col-xs-12"  >
     <div class="panel " class="container">
 
@@ -69,8 +71,19 @@ $row = $dados_monitor->fetch_assoc();
                     </div>
 
                     <div class="col-md-3">
-                        <label>Numero de Patrimônio:</label>
-                        <input class="form-control" type="number" name="num_patrimonio" />
+                        <label>Modelo:</label>
+                        <select class="form-control" name=modelo required>
+                            <option value="<?php echo $row['id_modelo'];?>"><?php echo $row['modelo'] ?></option>
+                            <?php
+                            $sistemas=mysql_query("SELECT modelo,id_modelo FROM modelo");
+                            while($tbl=mysql_fetch_array($sistemas)){
+                                $nome_sistemas=$tbl['modelo'];
+                                $id=$tbl['id_modelo'];
+                                ?>
+                                <option value="<?php echo $id?>">
+                                    <?php echo $nome_sistemas ?></option>
+                            <?php } ?>
+                        </select>
                     </div>
 
                     <div class="col-md-3">
@@ -90,32 +103,28 @@ $row = $dados_monitor->fetch_assoc();
                     </div>
 
 
+
                     <div class="col-md-3">
-                        <label>Modelo:</label>
-                        <select class="form-control" name=modelo required>
-                            <option value="<?php echo $row['id_modelo'];?>"><?php echo $row['modelo'] ?></option>
-                            <?php
-                            $sistemas=mysql_query("SELECT modelo,id_modelo FROM modelo");
-                            while($tbl=mysql_fetch_array($sistemas)){
-                                $nome_sistemas=$tbl['modelo'];
-                                $id=$tbl['id_modelo'];
-                                ?>
-                                <option value="<?php echo $id?>">
-                                    <?php echo $nome_sistemas ?></option>
-                            <?php } ?>
-                        </select>
+                        <label>Tamanho:</label>
+                        <input class="form-control"  type="number" name="tamanho" value="<?php echo $row['tamanho'] ?>"/></input>
                     </div>
 
-<div class="col-md-12">
+
+
+
+                    <div class="col-md-12">
     <br>
 </div>
 
-
-                     <div class="col-md-3">
-                        <label>Tamanho:</label>
-                        <input class="form-control"  type="number" name="tamanho"/></input>
+                    <div class="col-md-3">
+                        <label>Numero de Patrimônio:</label>
+                        <input class="form-control" type="number" name="num_patrimonio" value="<?php echo $row['num_patrimonio'] ?>"/>
                     </div>
 
+                    <div class="col-md-3">
+                        <label>Numero de série:</label>
+                        <input class="form-control" type="text" name="num_serie" value=" <?php echo $row['num_serie'] ?>"/>
+                    </div>
 
                     <div class="col-md-3">
                         <label>Comentário:</label>
@@ -208,11 +217,10 @@ $row = $dados_monitor->fetch_assoc();
 
 </div>
 
-<div class="col-md-1">
+<div class="col-md-11">
     <button class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
 
-</div>
-<div class="col-md-10">
+
 
     <button class="btn btn-success" type="submit"  name="id_monitor"  value='<?php echo $_GET['id_monitor'] ?>'>ATUALIZAR</button>
     </form>
@@ -254,10 +262,12 @@ $row = $dados_monitor->fetch_assoc();
 
 
 </div>
+</div></div>
 </div>
-</body>
-
 <?php
 require_once("../../footer.php")
 ?>
+</body>
+
+
 </html>

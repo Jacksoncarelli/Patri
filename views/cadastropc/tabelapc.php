@@ -21,7 +21,8 @@ require_once("../../topo.php");
 
 
 
-
+<div id="wrap">
+<div class="container">
 
     <div class="container">
         <form action=pdf_pc.php method=get >
@@ -127,10 +128,10 @@ require_once("../../topo.php");
     <div class="panel-footer"></div>
 </div>
 
-</div>
+</div></div></div>
 
     <?php
     require_once("../../footer.php")
     ?>
 </body>
-<br><br>
+

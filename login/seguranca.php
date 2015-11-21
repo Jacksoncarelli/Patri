@@ -20,7 +20,7 @@ $_SG['validaSempre'] = true;       // Deseja validar o usuário e a senha a cada
 $_SG['servidor'] = 'localhost';    // Servidor MySQL
 $_SG['usuario'] = 'root';          // Usuário MySQL
 $_SG['senha'] = '';                // Senha MySQL
-$_SG['banco'] = 'patri2';            // Banco de dados MySQL
+$_SG['banco'] = 'patri3';            // Banco de dados MySQL
 $_SG['paginaLogin'] = '/patri/login/login.php'; // Página de login
 $_SG['tabela'] = 'usuarios';       // Nome da tabela onde os usuários são salvos
 // ==============================
@@ -54,7 +54,7 @@ function validaUsuario($usuario, $senha) {
   $nusuario = addslashes($usuario);
   $nsenha = addslashes($senha);
   // Monta uma consulta SQL (query) para procurar um usuário
-  $sql = "SELECT `id_user`, `nome` FROM `".$_SG['tabela']."` WHERE ".$cS." `usuario` = '".$nusuario."' AND ".$cS." `senha` = '".$nsenha."' LIMIT 1";
+  $sql = "SELECT * FROM `".$_SG['tabela']."` WHERE ".$cS." `usuario` = '".$nusuario."' AND ".$cS." `senha` = '".$nsenha."' LIMIT 1";
   $query = mysql_query($sql);
   $resultado = mysql_fetch_assoc($query);
   // Verifica se encontrou algum registro
@@ -65,6 +65,7 @@ function validaUsuario($usuario, $senha) {
     // Definimos dois valores na sessão com os dados do usuário
     $_SESSION['usuarioID'] = $resultado['id_user']; // Pega o valor da coluna 'id do registro encontrado no MySQL
     $_SESSION['usuarioNome'] = $resultado['nome']; // Pega o valor da coluna 'nome' do registro encontrado no MySQL
+    $_SESSION['usuarioNivel'] = $resultado['nivel'];
     // Verifica a opção se sempre validar o login
     if ($_SG['validaSempre'] == true) {
       // Definimos dois valores na sessão com os dados do login

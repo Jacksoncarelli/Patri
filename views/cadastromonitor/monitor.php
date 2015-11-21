@@ -21,7 +21,8 @@ require_once("../../topo.php");
 
 <body>
 
-<br>
+<div id="wrap">
+<div class="container">
 <div class="col-xs-12">
     <div class="panel ">
 
@@ -192,12 +193,15 @@ require_once("../../topo.php");
 </form>
 </div>
 </div>
+</div></div>
+
+
+<?php
+require_once("../../footer.php")
+?>
 </body>
 <script src="../../css/bootstrap/js/validaform.js"></script>
 
 
 
 </html>
-<?php
-require_once("../../footer.php")
-?>

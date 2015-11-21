@@ -7,6 +7,11 @@ require_once ("../../conexao.php");
 $nome=$_POST["nome"];
 $fabricante=$_POST["fabricante"];
 
+if (empty($fabricante)){
+
+	$fabricante='NULL';
+}
+
 $sql = "INSERT INTO sistema_operacional (nome_so,id_fabricante) VALUES ('$nome',$fabricante)";
 
 if($db->query($sql)){

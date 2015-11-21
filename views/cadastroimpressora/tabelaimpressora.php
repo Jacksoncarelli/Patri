@@ -21,7 +21,8 @@ require_once("../../topo.php");
 
 
 
-
+<div id="wrap">
+<div class="container">
 <div class="container">
     <form action=pdf_impressora.php method=get >
     <button  class="btn btn-primary btn-sm" data-toggle="modal" data-target="#createModal">
@@ -126,6 +127,8 @@ require_once("../../topo.php");
                          echo '<td align="center">
                         
     <form  action="editarimpressora.php" method="GET">
+
+    
     <input class="btn btn-success btn-sm" type="hidden"   name="port_serial" id='.$row["port_serial"].' value="'.$row["port_serial"].'"/>
           <input class="btn btn-success btn-sm" type="hidden"   name="usb" id='.$row["usb"].' value="'.$row["usb"]. '"/>
           <input class="btn btn-success btn-sm" type="hidden"   name="paralela" id='.$row["paralela"].' value="'.$row["paralela"]. '"/>
@@ -151,11 +154,10 @@ require_once("../../topo.php");
     </div><div class="panel-footer" align="right"></div>
 </div>
 </div>
-
-
-</body>
-<br><br><br><br><br><br><br><br><br>
+</div>
+</div>
 
 <?php
 require_once("../../footer.php")
 ?>
+</body>

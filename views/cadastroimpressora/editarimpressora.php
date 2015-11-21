@@ -40,8 +40,9 @@ $row = $dados_impressora->fetch_assoc();
 ?>
 
 <body>
+<div id="wrap">
 
-<br>
+<div class="container">
 <div class="col-xs-12"  >
     <div class="panel " class="container">
 
@@ -209,11 +210,8 @@ $row = $dados_impressora->fetch_assoc();
 </div>
 </div>
 </div>
-<div class="col-md-1">
+<div class="col-md-11">
     <button title="Voltar" class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
-
-</div>
-<div class="col-md-10">
 
     
 
@@ -260,9 +258,13 @@ $row = $dados_impressora->fetch_assoc();
 </form>
 </div>
 </div>
-</body>
-
+</div>
+</div>
 <?php
 require_once("../../footer.php")
 ?>
+
+</body>
+
+
 </html>

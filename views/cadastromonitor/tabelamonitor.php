@@ -18,6 +18,7 @@ require_once("../../topo.php");
     ?>
 </head>
 <body>
+<div id="wrap">
 
 <div class="container">
 
@@ -41,6 +42,9 @@ require_once("../../topo.php");
                 <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Patrimonio</th>
+                    <th>Série</th>
+                    <th>Tamanho</th>
                     <th>Modelo</th>
                     <th>Fabricante</th>
                     <th>Local</th>
@@ -70,6 +74,16 @@ require_once("../../topo.php");
                      if($db->query($dados_monitor)){
                          while ($row =$resultadomonitor->fetch_assoc()) {
                              echo '  <tr><td>'. $row["id_monitor"].'</td>';
+
+                             if(empty($row["num_patrimonio"]))
+                                 $row["num_patrimonio"]='Não possui';
+                             echo '<td>' . $row["num_patrimonio"] . '</td>';
+
+                             if(empty($row["num_serie"]))
+                                 $row["num_serie"]='Não possui';
+                             echo '<td>' . $row["num_serie"] . '</td>';
+
+                             echo '<td>' . $row["tamanho"] . '</td>';
                              echo '<td>' . $row["modelo"] . '</td>';
                              echo '<td>' . $row["nome_fabricante"] . '</td>';
                              echo '<td>' . $row["nome_local"] . '</td>';
@@ -156,15 +170,13 @@ require_once("../../topo.php");
     </div><div class="panel-footer"></div>
 </div>
 
+</div></div>
 
-
-
-
-
-
-</body>
 
 
 <?php
 require_once("../../footer.php")
 ?>
+
+</body>
+

@@ -40,7 +40,8 @@ $row = $dados_pc->fetch_assoc();
 
 <body>
 
-<br>
+<div id="wrap">
+<div class="container">
 <div class="col-xs-12"  >
     <div class="panel " class="container">
 
@@ -193,11 +194,10 @@ $row = $dados_pc->fetch_assoc();
         </div>
     </div>
 </div>
-<div class="col-md-1">
+<div class="col-md-11">
     <button title="Voltar" class="btn btn-primary" onClick="history.go(-1)"><spam class="glyphicon glyphicon-arrow-left"></spam> VOLTAR</button>
 
-</div>
-<div class="col-md-10">
+
         <button class="btn btn-success" title="Atualizar computador" class="" type="submit" >ATUALIZAR</button>
   </div>  </form>
 
@@ -235,10 +235,11 @@ $row = $dados_pc->fetch_assoc();
     </form>
 </div>
 </div>
-
-</body>
-
+</div></div>
 <?php
 require_once("../../footer.php")
 ?>
+</body>
+
+
 </html>

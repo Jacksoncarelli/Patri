@@ -20,8 +20,13 @@ $microfone = $_GET['microfone'];
 $autofalante=$_GET['autofalante'];
 $webcam = $_GET['webcam'];
 
+$num_serie = $_GET['num_serie'];
+$num_patrimonio = $_GET['num_patrimonio'];
+$tamanho = $_GET['tamanho'];
 
-$sql = "UPDATE monitor SET comentario='$comentario',id_fabricante=$fabricante,id_local=$local,id_modelo=$modelo,
+
+
+$sql = "UPDATE monitor SET num_serie='$num_serie',num_patrimonio='$num_patrimonio',tamanho=$tamanho,comentario='$comentario',id_fabricante=$fabricante,id_local=$local,id_modelo=$modelo,
 										id_status=$status,hdmi=$hdmi,dvi=$dvi,vga=$vga,displayport=$displayport,
 										microfone=$microfone,autofalante=$autofalante,webcam=$webcam
 										 WHERE id_monitor=$id";
@@ -33,23 +38,7 @@ if($db->query($sql)){
 }
 else
 	{
-		echo
-		$hdmi ,
-		$dvi,
-		$vga,
-		$displayport,
-		$microfone,
-		$autofalante,
-		$webcam,
-			" numero serie: ".$num_serie,
-			" fabricante: ".$fabricante,
-			" local: ".$local,
-			" responsavel: ".$responsavel,
-			" modelo: ".$modelo,
-			" status: ".$status,
-			" comentario: ".$comentario,
-			" USER: ".$user,
-			" ID: ".$id;
+		echo $sql;
  }	
   mysqli_close($db);
 ?>	

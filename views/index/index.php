@@ -54,14 +54,22 @@ h2 {
 
  <title>Sistema de Inventário</title></head>
 <body >
+<div id="wrap">
+
+<div class="container">
+
+
 <Br><Br><Br><Br><Br><Br><Br>
 <h1 align="center" class="fadeIn"> Seja bem vindo!!</h1>
 <h2 align="center" class="fadeIn"> SisPatrimoio</h2>
 <div class="push"></div>
+  </div>
+    </div>
 
 <?php
 require_once("../../footer.php")
 ?>
+
  </body>
 
 
