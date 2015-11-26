@@ -46,7 +46,7 @@ require_once("../../topo.php");
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Patrimonio</th>
+                    <th>Patrimônio</th>
                     <th>Série</th>
                     <th>Sistema Operacional</th>
                     <th>Serial SO</th>
@@ -55,7 +55,9 @@ require_once("../../topo.php");
                     <th>Local</th>
                     <th>Comentário</th>
                     <th>Status</th>
-                    <th>Opções</th>
+            <?php if ($_SESSION['usuarioNivel'] == 2 || $_SESSION['usuarioNivel'] == 3 ){
+                    echo '<th>Opções</th>';
+                    }?>
                 </tr>
                 </thead>
                 <tbody>
@@ -78,17 +80,17 @@ require_once("../../topo.php");
                         echo '<td>' . $row["nome"] . '</td>';
 
                                 if(empty($row["num_patrimonio"]))
-                                $row["num_patrimonio"]='Não possui';
+                                $row["num_patrimonio"]='N/C';
                         echo '<td>' . $row["num_patrimonio"] . '</td>';
 
                         if(empty($row["num_serie"]))
-                                $row["num_serie"]='Não possui';
+                                $row["num_serie"]='N/C';
                         echo '<td>' . $row["num_serie"] . '</td>';
 
                         echo '<td>' . $row["nome_so"] . '</td>';
 
                         if(empty($row["serial_so"]))
-                                $row["serial_so"]='Não possui';
+                                $row["serial_so"]='N/C';
                         echo '<td>'. $row["serial_so"].'</td>';
 
                         echo '<td>'. $row["nome_fabricante"].'</td>';
@@ -96,24 +98,25 @@ require_once("../../topo.php");
                         echo '<td>'. $row["sigla_local"].'</td>';
 
                         if(empty($row["comentario"]))
-                                $row["comentario"]='Não possui';
+                                $row["comentario"]='N/C';
                         echo '<td>' . $row["comentario"] . '</td>';
                         
                         echo '<td>'. $row["nome_status"].'</td>';
+    if ($_SESSION['usuarioNivel'] == 2 || $_SESSION['usuarioNivel'] == 3 ){ 
+                        echo '<td align="center">';
+                      
+    echo '<form  action="editarpc.php" method="GET">
 
-                        echo '<td align="center">
-                        
-    <form  action="editarpc.php" method="GET">
 
-
-          <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>
-          <button class="btn btn-success btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Editar</button>
+          <input class="btn btn-success btn-sm" type="hidden"   name="id_status" id='.$row["id_status"].' value="'.$row["id_status"].'"/>';
+          
+            echo'<button class="btn btn-success btn-sm" type="submit"  name="id_pc" id='.$row["id_computador"].' value='.$row["id_computador"].'>Editar</button>
 
     </form>
 
-                    </td>
+                    </td> 
                 </tr>';
-
+                        }
 
                     }
                 }

@@ -186,7 +186,7 @@
                         <label> Senha: </label>
                         <input class="form-control" height="100px" type="password" name="senha" required/>
 
-                        <label>Nivel: (<a title="Nivel 1: , Nivel 2: , Nivel 3: ">?</a>)</label>
+                        <label>Nivel: (<a title="Nivel 1: terá acesso apenas a visualização dos inventários, Nivel 2: Poderá editar os inventários e deletalos , Nivel 3: Acesso a tudo, com painel admin">?</a>)</label>
                         <select class="form-control" name="nivel" required>
                             <option  disabled selected>Escolha o nivel</option>
                             <option value="1" >Nivel 1</option>
@@ -223,14 +223,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="../../views/index/index.php" class="navbar-brand"> <span class="glyphicon glyphicon-home"></span> SIS-Patrimoio</a>
+        <a href="../../views/index/index.php" class="navbar-brand"> <span class="glyphicon glyphicon-home"></span> SIS-Patrimonio</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
 
 <?php if ($_SESSION['usuarioNivel'] == 3){
-echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Admin <b class="caret"></b></a>
+echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Painel Admin <b class="caret"></b></a>
                  <ul class="dropdown-menu">
                     <li><a href="#" data-toggle="modal" data-target="#ModalUsuario">Novo Usuário</a></li>
                     <li ><a href="../../views/cadastrouser/tabelausuario.php">Usuários Cadastrados</a>
@@ -241,7 +241,8 @@ echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dro
 }
 ?>
 
-            <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
+<?php if ($_SESSION['usuarioNivel'] == 2 || $_SESSION['usuarioNivel'] == 3 ){
+          echo  '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Cadastro <b class="caret"></b></a>
                 <ul class="dropdown-menu">
 
                             <li ><a href="../../views/cadastropc/computador.php">Novo Computador</a>
@@ -255,8 +256,9 @@ echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dro
                     <li><a  href="#" data-toggle="modal" data-target="#ModalLocal">Local</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#ModalSo">Sistema Operacional</a></li>
                         </ul>
-                    </li>
-
+                    </li>';
+}
+?>
 
             <li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dropdown">Relatórios <b class="caret"></b></a>
                  <ul class="dropdown-menu">
@@ -278,7 +280,7 @@ echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dro
 
 
 
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+           <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="../../views/cadastrouser/cadastro.php">Cadastro de usuario</a></li>
                     <li><a href="#">Dropdown Link 2</a></li>
@@ -324,7 +326,7 @@ echo '<li class="dropdown"><a href="#" class="dropdown-submenu" data-toggle="dro
                         </ul>
                     </li>
                 </ul>
-            </li>
+            </li>-->
 
         </ul>
 

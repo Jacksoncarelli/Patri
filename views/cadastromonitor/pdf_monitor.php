@@ -36,6 +36,9 @@ table th {
                 <thead>
                 <tr>
                   <th>ID</th>
+                    <th>Patrimônio</th>
+                    <th>Série</th>
+                    <th>Tamanho</th>
                     <th>Modelo</th>
                     <th>Fabricante</th>
                     <th>Local</th>
@@ -43,7 +46,7 @@ table th {
                     <th>VGA</th>
                     <th>DVI</th>
                     <th>Displayport</th>
-                    <th>Auto Falante</th>
+                    <th>Alto Falante</th>
                     <th>Microfone</th>
                     <th>Webcam</th>
                     <th>Comentario</th>
@@ -54,6 +57,9 @@ table th {
 if($db->query($dados)){
             while ($row =$resultadomonitor->fetch_assoc()) {
                $tabela .='  <tr><td>'. $row["id_monitor"].'</td>';
+               $tabela .='<td>' . $row["num_patrimonio"] . '</td>';
+               $tabela .='<td>' . $row["num_serie"] . '</td>';
+               $tabela .='<td>' . $row["tamanho"] . '</td>';
                $tabela .='<td>' . $row["id_modelo"] . '</td>';
                $tabela .='<td>' . $row["id_fabricante"] . '</td>';
                $tabela .='<td>' . $row["id_local"] . '</td>';

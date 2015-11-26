@@ -38,13 +38,9 @@
       <file leaf-file-name="tabelamonitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/cadastromonitor/tabelamonitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
-              <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
-              <folding>
-                <marker date="1448068035211" expanded="true" signature="2040:2484" placeholder="SELECT * FRO..monitor..." />
-                <marker date="1448068035211" expanded="true" signature="6032:7352" placeholder="..." />
-                <marker date="1448068035211" expanded="true" signature="6109:7325" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,12 +48,14 @@
       <file leaf-file-name="monitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/cadastromonitor/monitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2545455">
-              <caret line="93" column="80" selection-start-line="93" selection-start-column="73" selection-end-line="93" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="26" selection-start-line="93" selection-start-column="73" selection-end-line="93" selection-end-column="80" />
               <folding>
-                <marker date="1447988818453" expanded="true" signature="1344:1381" placeholder="SELECT nome_..local..." />
-                <marker date="1447988818453" expanded="true" signature="2207:2242" placeholder="SELECT model..modelo..." />
-                <marker date="1447988818453" expanded="true" signature="3111:3163" placeholder="SELECT nome_..fabricante..." />
+                <marker date="1448393039486" expanded="true" signature="1344:1381" placeholder="SELECT nome_..local..." />
+                <marker date="1448393039486" expanded="true" signature="2207:2242" placeholder="SELECT model..modelo..." />
+                <marker date="1448393039486" expanded="true" signature="2315:2675" placeholder="..." />
+                <marker date="1448393039486" expanded="true" signature="3111:3163" placeholder="SELECT nome_..fabricante..." />
+                <marker date="1448393039486" expanded="true" signature="3236:3577" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -66,13 +64,13 @@
       <file leaf-file-name="editarmonitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
+            <state vertical-scroll-proportion="0.0">
               <caret line="125" column="79" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="79" />
               <folding>
-                <marker date="1448068374139" expanded="true" signature="847:1310" placeholder="SELECT * FRO..monitor..." />
-                <marker date="1448068374139" expanded="true" signature="2197:2234" placeholder="SELECT nome_..local..." />
-                <marker date="1448068374139" expanded="true" signature="3069:3104" placeholder="SELECT model..modelo..." />
-                <marker date="1448068374139" expanded="true" signature="3957:4009" placeholder="SELECT nome_..fabricante..." />
+                <marker date="1447990470000" expanded="true" signature="847:1310" placeholder="SELECT * FRO..monitor..." />
+                <marker date="1447990470000" expanded="true" signature="2197:2234" placeholder="SELECT nome_..local..." />
+                <marker date="1447990470000" expanded="true" signature="3069:3104" placeholder="SELECT model..modelo..." />
+                <marker date="1447990470000" expanded="true" signature="3957:4009" placeholder="SELECT nome_..fabricante..." />
               </folding>
             </state>
           </provider>
@@ -81,10 +79,10 @@
       <file leaf-file-name="salvarmonitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/cadastromonitor/salvarmonitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.9811325">
+            <state vertical-scroll-proportion="0.0">
               <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
               <folding>
-                <marker date="1448068717720" expanded="true" signature="736:1096" placeholder="UPDATE monit..." />
+                <marker date="1447990470000" expanded="true" signature="736:1096" placeholder="UPDATE monit..." />
               </folding>
             </state>
           </provider>
@@ -94,9 +92,9 @@
         <entry file="file://$PROJECT_DIR$/views/cadastropc/salvarpc.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5097002">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <marker date="1447831818000" expanded="true" signature="574:827" placeholder="UPDATE compu..." />
+                <marker date="1447990470000" expanded="true" signature="574:827" placeholder="UPDATE compu..." />
               </folding>
             </state>
           </provider>
@@ -117,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/cadastropc/pdf.php" />
         <option value="$PROJECT_DIR$/views/cadastropc/pdf_pc2.php" />
         <option value="$PROJECT_DIR$/views/cadastroimpressora/pdc_impressora.php" />
         <option value="$PROJECT_DIR$/views/cadastromonitor/pdf_monitor.php" />
@@ -168,6 +165,7 @@
         <option value="$PROJECT_DIR$/views/cadastromonitor/inserirmonitor.php" />
         <option value="$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php" />
         <option value="$PROJECT_DIR$/views/cadastromonitor/salvarmonitor.php" />
+        <option value="$PROJECT_DIR$/views/cadastropc/salvarpc.php" />
       </list>
     </option>
   </component>
@@ -227,7 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,12 +332,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sigal" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="165" />
@@ -414,16 +412,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25113463" sideWeight="0.5056361" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -645,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3355818">
           <caret line="401" column="22" selection-start-line="401" selection-start-column="22" selection-end-line="401" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,21 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
-          <folding>
-            <marker date="1447997725750" expanded="true" signature="1344:1366" placeholder="SELECT * FRO..usuarios..." />
-            <marker date="1447997725750" expanded="true" signature="1602:1624" placeholder="SELECT * FRO..usuarios..." />
-            <marker date="1447997725750" expanded="true" signature="1889:3079" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="1890:3079" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="1988:2766" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2045:2759" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2080:2759" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2155:2759" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2198:2383" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2424:2522" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2565:2683" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2565:2742" placeholder="..." />
-            <marker date="1447997725750" expanded="true" signature="2834:3052" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,10 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5097002">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <marker date="1447997994533" expanded="true" signature="255:291" placeholder="DELETE FROM ..." />
-            <marker date="1447997994533" expanded="true" signature="255:292" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,9 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <marker date="1448064746271" expanded="true" signature="2289:2409" placeholder="SELECT * FRO..${$_SG['tabela']}..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,9 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <marker date="1448064746302" expanded="true" signature="2289:2409" placeholder="SELECT * FRO..${$_SG['tabela']}..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="112" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="112" />
-          <folding>
-            <marker date="1448065015305" expanded="true" signature="221:278" placeholder="INSERT INTO fabricante..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5097002">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <marker date="1448065127671" expanded="true" signature="259:331" placeholder="INSERT INTO modelo..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,11 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5636363">
           <caret line="83" column="90" selection-start-line="83" selection-start-column="90" selection-end-line="83" selection-end-column="90" />
-          <folding>
-            <marker date="1448066131425" expanded="true" signature="1560:1597" placeholder="SELECT nome_..local..." />
-            <marker date="1448066131425" expanded="true" signature="2499:2551" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1448066131425" expanded="true" signature="3367:3402" placeholder="SELECT model..modelo..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,9 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
           <caret line="29" column="8" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="8" />
-          <folding>
-            <marker date="1447956850216" expanded="true" signature="795:1123" placeholder="UPDATE impre..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,9 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3462963">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <marker date="1448066900784" expanded="true" signature="305:389" placeholder="INSERT INTO sistema_operacional..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,25 +770,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.52230483">
           <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
-          <folding>
-            <marker date="1448066493893" expanded="true" signature="4013:4065" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1448066493893" expanded="true" signature="5778:5830" placeholder="SELECT nome_..fabricante..." />
-            <marker date="1448066493893" expanded="true" signature="9060:9478" placeholder="..." />
-            <marker date="1448066493893" expanded="true" signature="9195:9460" placeholder="..." />
-            <marker date="1448066493893" expanded="true" signature="9326:9438" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cadastromonitor/tabelamonitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
-          <folding>
-            <marker date="1448068035211" expanded="true" signature="2040:2484" placeholder="SELECT * FRO..monitor..." />
-            <marker date="1448068035211" expanded="true" signature="6032:7352" placeholder="..." />
-            <marker date="1448068035211" expanded="true" signature="6109:7325" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -842,33 +785,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33888888">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <marker date="1448068133796" expanded="true" signature="829:1161" placeholder="INSERT INTO monitor..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cadastromonitor/monitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2545455">
-          <caret line="93" column="80" selection-start-line="93" selection-start-column="73" selection-end-line="93" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="26" selection-start-line="93" selection-start-column="73" selection-end-line="93" selection-end-column="80" />
           <folding>
-            <marker date="1447988818453" expanded="true" signature="1344:1381" placeholder="SELECT nome_..local..." />
-            <marker date="1447988818453" expanded="true" signature="2207:2242" placeholder="SELECT model..modelo..." />
-            <marker date="1447988818453" expanded="true" signature="3111:3163" placeholder="SELECT nome_..fabricante..." />
+            <marker date="1448393039486" expanded="true" signature="1344:1381" placeholder="SELECT nome_..local..." />
+            <marker date="1448393039486" expanded="true" signature="2207:2242" placeholder="SELECT model..modelo..." />
+            <marker date="1448393039486" expanded="true" signature="2315:2675" placeholder="..." />
+            <marker date="1448393039486" expanded="true" signature="3111:3163" placeholder="SELECT nome_..fabricante..." />
+            <marker date="1448393039486" expanded="true" signature="3236:3577" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cadastromonitor/editarmonitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="125" column="79" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="79" />
           <folding>
-            <marker date="1448068374139" expanded="true" signature="847:1310" placeholder="SELECT * FRO..monitor..." />
-            <marker date="1448068374139" expanded="true" signature="2197:2234" placeholder="SELECT nome_..local..." />
-            <marker date="1448068374139" expanded="true" signature="3069:3104" placeholder="SELECT model..modelo..." />
-            <marker date="1448068374139" expanded="true" signature="3957:4009" placeholder="SELECT nome_..fabricante..." />
+            <marker date="1447990470000" expanded="true" signature="847:1310" placeholder="SELECT * FRO..monitor..." />
+            <marker date="1447990470000" expanded="true" signature="2197:2234" placeholder="SELECT nome_..local..." />
+            <marker date="1447990470000" expanded="true" signature="3069:3104" placeholder="SELECT model..modelo..." />
+            <marker date="1447990470000" expanded="true" signature="3957:4009" placeholder="SELECT nome_..fabricante..." />
           </folding>
         </state>
       </provider>
@@ -877,20 +819,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1428572">
           <caret line="49" column="34" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="34" />
-          <folding>
-            <marker date="1447986683313" expanded="true" signature="1885:2455" placeholder="SELECT * FRO..computador..." />
-            <marker date="1447986683313" expanded="true" signature="3999:4405" placeholder="..." />
-            <marker date="1447986683313" expanded="true" signature="4071:4378" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/cadastromonitor/salvarmonitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.9811325">
+        <state vertical-scroll-proportion="0.0">
           <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
           <folding>
-            <marker date="1448068717720" expanded="true" signature="736:1096" placeholder="UPDATE monit..." />
+            <marker date="1447990470000" expanded="true" signature="736:1096" placeholder="UPDATE monit..." />
           </folding>
         </state>
       </provider>
@@ -898,9 +835,9 @@
     <entry file="file://$PROJECT_DIR$/views/cadastropc/salvarpc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5097002">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1447831818000" expanded="true" signature="574:827" placeholder="UPDATE compu..." />
+            <marker date="1447990470000" expanded="true" signature="574:827" placeholder="UPDATE compu..." />
           </folding>
         </state>
       </provider>

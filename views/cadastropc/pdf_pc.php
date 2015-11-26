@@ -39,7 +39,7 @@ table th {
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Patrimonio</th>
+                    <th>Patrimônio</th>
                     <th>Série</th>
                     <th>Sistema Operacional</th>
                     <th>Serial SO</th>

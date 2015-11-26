@@ -142,7 +142,7 @@ require_once("../../topo.php");
                         </label>
                         <label class="checkbox-inline">
                         <input type="hidden"  name="autofalante" value="0">
-                            <input type="checkbox" name="autofalante" value="1"> Auto Falante
+                            <input type="checkbox" name="autofalante" value="1"> Alto Falante
                         </label>
                         <label class="checkbox-inline">
                         <input type="hidden"  name="microfone" value="0">
@@ -195,7 +195,7 @@ require_once("../../topo.php");
 </div>
 </div></div>
 
-
+<Br><Br><Br>
 <?php
 require_once("../../footer.php")
 ?>

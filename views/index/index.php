@@ -61,7 +61,7 @@ h2 {
 
 <Br><Br><Br><Br><Br><Br><Br>
 <h1 align="center" class="fadeIn"> Seja bem vindo!!</h1>
-<h2 align="center" class="fadeIn"> SisPatrimoio</h2>
+<h2 align="center" class="fadeIn"> SisPatrimonio</h2>
 <div class="push"></div>
   </div>
     </div>

@@ -12,7 +12,7 @@ require_once("../../topo.php");
     <link href="../../css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="../../css/bootstrap/js/bootstrap.min.js"></script>
     <script src="../../css/bootstrap/js/jquery-1.11.3.min.js"></script>
-    <title>Tabela Computadores</title>
+    <title>Tabela de Monitores</title>
     <?php
     require_once ("../../conexao.php");
     ?>
@@ -42,7 +42,7 @@ require_once("../../topo.php");
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Patrimonio</th>
+                    <th>Patrimônio</th>
                     <th>Série</th>
                     <th>Tamanho</th>
                     <th>Modelo</th>
@@ -52,12 +52,13 @@ require_once("../../topo.php");
                     <th>VGA</th>
                     <th>DVI</th>
                     <th>Displayport</th>
-                    <th>Auto Falante</th>
+                    <th>Alto Falante</th>
                     <th>Microfone</th>
                     <th>Webcam</th>
                     <th>Comentario</th>
-                    <th>Status</th>
-                    <th>Opções</th>
+                    <th>Status</th> <?php if ($_SESSION['usuarioNivel'] == 2 || $_SESSION['usuarioNivel'] == 3 ){
+                    echo '<th>Opções</th>';
+                    }?>
                 </tr>
                 </thead>
                 <tbody>
@@ -76,11 +77,11 @@ require_once("../../topo.php");
                              echo '  <tr><td>'. $row["id_monitor"].'</td>';
 
                              if(empty($row["num_patrimonio"]))
-                                 $row["num_patrimonio"]='Não possui';
+                                 $row["num_patrimonio"]='N/C';
                              echo '<td>' . $row["num_patrimonio"] . '</td>';
 
                              if(empty($row["num_serie"]))
-                                 $row["num_serie"]='Não possui';
+                                 $row["num_serie"]='N/C';
                              echo '<td>' . $row["num_serie"] . '</td>';
 
                              echo '<td>' . $row["tamanho"] . '</td>';
@@ -132,11 +133,11 @@ require_once("../../topo.php");
 
                              }
                              if(empty($row["comentario"]))
-                                $row["comentario"]='Não possui';
+                                $row["comentario"]='N/C';
                              echo '<td>' . $row["comentario"] . '</td>';
                              echo '<td>' . $row["nome_status"] . '</td>';
 
-
+    if ($_SESSION['usuarioNivel'] == 2 || $_SESSION['usuarioNivel'] == 3 ){ 
                                   echo '<td align="center">
                         
     <form  action="editarmonitor.php" method="GET">
@@ -156,6 +157,7 @@ require_once("../../topo.php");
 
                     </td>
                 </tr>'  ;
+            }
                          }
 
                      }

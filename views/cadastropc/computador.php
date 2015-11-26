@@ -16,7 +16,7 @@ require_once("../../topo.php");
 
 
 
-    <title>Cadastro de Computador</title>
+    <title>Cadastro de Computadores</title>
 
 </head>
 <body>
@@ -180,7 +180,7 @@ require_once("../../topo.php");
             </div>
 </div>
     </div>
-
+<Br><Br><Br>
 <?php
 include ("../../footer.php");
 ?>

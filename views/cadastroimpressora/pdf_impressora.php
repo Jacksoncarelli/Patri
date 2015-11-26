@@ -39,7 +39,8 @@ table th {
                 <thead>
                 <tr>
                    <th>ID</th>
-                    <th>Patrimonio</th>
+                    <th>Nome</th>
+                    <th>Patrimônio</th>
                     <th>Série</th>
                     <th>Contagem Atual</th>
                     <th>Porta serial</th>
@@ -57,6 +58,7 @@ table th {
 if($db->query($dados_impressora)){
     while ($row =$resultadoimpressora->fetch_assoc())  {
         $tabela .= '<tr><td>'.$row['id_impressora'] . '</td>';
+        $tabela .='<td>'.$row['nome_impressora'] . '</td>';
         $tabela .='<td>'.$row['num_patrimonio'] . '</td>';
         $tabela .='<td>'.$row['num_serie'] . '</td>';
         $tabela .='<td>'.$row['con_atual'] . '</td>';
